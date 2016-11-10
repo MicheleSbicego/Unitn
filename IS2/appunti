@@ -1,0 +1,212 @@
+
+PRIMA LEZIONE
+=============
+
+Insegnante: Mattia Salnitri.
+
+Programma della lezione.
+Oggi faremo esercizi su javascript.
+Prima parte: vedere github.
+Seconda parte: svolgere un esercizio di javascript.
+
+Esempi: github, gitlab.
+Servono per: gestire progetti, organizzare il codice, tracciare il codice, lavorare con molti programmatori.
+
+Ci sono 3 tipi di branch dal punto di vista del significato:
+master: quello principale, quello di release
+staging: faccio i test
+development: creo nuovo codice.
+Esempio: ho il master, faccio un branch staging di una nuova funzionalita', faccio un sottobranch development dove scrivo il codice. Quando il codice è sufficiente, lo mergo in staging e qualcuno lo sottopone a test, mentre io intanto potrei andare avanti col development. Quando lo staging è soddisfacendte, si merge nel master.
+
+COMANDI:
+
+$ gir push origin master
+origin: locale (sorgente)
+master: server (target)
+
+$ git branch <nome_branch>
+crea un nuovo branch
+
+$ git checkout <nome_branch>
+passa al nuovo branch
+
+$ git commit -m "<messaggio>"
+committa usando il messaggio specificato
+
+$ git commit -a
+commita tutti i file, anche quelli non addati
+
+$ git merge <nome_branch>
+mergia il branch specificato nel branch corrente
+
+$ git branch -d <nome_branch>
+cancella il branch specificato
+
+$ git diff <branch_1> <branch_2>
+mostra le differenze tra i due branch
+
+$ <branch>^^^
+è lo versione del branch 3 commit prima
+
+$ git log
+mostra i commit
+
+$ <hash> <file>
+è la versione del file corrispondente al codice hash specificato
+
+ESERCIZIO.
+Ho un magazzino.
+Posso ordinare una certa quantità di un certo tipo di item.
+Devo specificare il tipo e la quantita', e l'ordine viene aggiunto a una tabella.
+Per questo esercizio non cancellare i branch.
+Nome della repository: SE2_16_matricola_L2.
+Aggiungere come collaboratore: MattiaSalnitri.
+Separiamo il front-end dal back-end.
+Aggiungere la funzionalità: un bottone "update storage space", che modifica il numero massimo di oggetti (per ogni tipo indifferentemente dal tipo).
+Se il numero di oggetti è superiore, il numero viene aggiunto lo stesso alla tabella ma compare un pop-up di warning.
+
+JAVASCRIPT. Suggerimenti.
+
+document.getElementById
+crea un elemento javascript che fa riferimento alla pagina html, all'oggetto con l'id specificato.
+
+.rows.length
+da' il numero di riga
+
+.deleteRow
+cancello una riga
+
+.insertRow
+inserire una riga
+
+.insertCell
+inserire una cella in una determinata riga
+
+.innerHTML
+scrivere in uan cella
+
+.style.display = 'none'
+nascondere l'elemento
+
+.style.display = 'block'
+vedere l'elemento
+
+SECONDA LEZIONE
+===============
+
+Programma.
+Oggi vedremo un linguaggio basato su javascript: node.js.
+Mentre la lezione scorsa eravamo dal lato client, oggi siamo dal lato server.
+
+NODE.JS
+E' un linguaggio asincrono. Dei pezzi di codice vengono attivati quando è richiesto, non c'è un while() che aspetta che arrivi l'input.
+
+COMANDI
+
+$ node
+apre una console di javascript
+
+$ console.log(<variabile>)
+
+$ .exit
+$ ^C ^C
+esce dalla console
+
+$ node <node.js_script>
+esegue il file
+
+Nota. In locale, posso scrivere una porta qualsiasi e sul browser accedere all'indirizzo di quella porta.
+
+BRACKETS: editor per scrivere html, css, js.
+
+NPM. E' un programmino utile.
+
+$ npm init
+è un programma interattivo. Chiede:
+- il nome del progetto
+- la versione
+- la descrizione
+- il main
+- text command lo lasciamo stare per il momento
+- repository non ci interessa per il momento
+- keywords dipende da noi
+- autore
+- licenza
+Produce una mappa dentro ad un file.
+
+TEMPLATE.
+Vogliamo dividere le due parti.
+Abbiamo un template html. L'estensione è .tpl.
+L'obiettivo è non chiamare le robe direttamente ma fornire una specie di interfaccia in modo che il codice sia piu' elegante e maneggevole.
+
+$ npm install bind --save
+installa la cartella bind in locale
+se c'è --save aggiunge la libreria al package di jason
+
+BIND: è una libreria. E' utile da usare. Si usa dentro a un .tpl.
+
+Ci sono due tipi di passaggi di parametri dal browser all'applicatzione:
+- get: scrive i parametri nell'url
+- post: li codifica nel flusso dati (piu' sicuro per username e password)
+
+GET
+Il server viene chiamato con una stringa che identifica le variabili, che va parsata. C'è una libreria che parsa. I valori parsati li agganciamo ad un oggetto.
+
+Invece di usare createserver usiamo una libreria piu' completa, che è express.
+Creo express, gli dico la porta con set, gli dico il contenuto del server con get, gli dico di ascoltare con listen. Post vedremo dopo a cosa serve.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

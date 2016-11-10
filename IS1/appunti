@@ -1,0 +1,259 @@
+
+PRIMA LEZIONE
+=============
+
+CAPOPROGETTO: ha il compito di portare i risultato nei modi e nei tempi previsti. Usa il 
+DIAGRAMMA DI GANTT. E' lo strumento che tiene aggiornato e grazie a cui ha sempre la visione dello stato di sviluppo del software.
+
+SECONDA LEZIONE
+===============
+
+ANALISI DEI REQUISITI. cosa vuol dire? Quali strumenti ha l'ingegneria del software?
+L'analisi dei requisiti avviene DOPO il diagramma di Gantt, quando si pianifica.
+Oggi vedremo cosa vuol dire fare analisi dei requisiti nella pratica.
+
+Il capo progetto gestisce il diagramma di Gantt.
+
+ANALISTA: è la persona che si occupa di fare analisi dei requisiti.
+Nei progetti medi piccoli (6-8 mesi, meno di un anno) di solito il capo progetto fa anche l'analista.
+
+[mercoledì non c'è lezione]
+
+ANALISI DEI REQUISITI: cosa vuol dire? Vuol dire definire la lista della spesa, cioè cosa fa il software. Definisce COSA fa il software (non il COME). Per gli informatici è difficile capire COSA, perchè pensano subito al COME, non si concentrano sul COSA ma pensano subito al COME. Bisogna invece concentrarsi solo su COSA deve fare il sistema. Bisogna dimenticarci del COME farlo.
+Al COME ci si penserà in fase di design.
+
+Documento: normalmente i requisiti vengono collezionati in un documento. Ci sono due tipi di requisiti:
+- funzionali: vengono dati dal cliente,
+- non funzionali: dobbiamo identificarli da soli.
+
+Noi in questo momento ci concentriamo su questo elenco dei requisiti, ma in realtà la fase di analisi dei requisiti è molto più complessa.
+Useremo due tipi di diagrammi di UML:
+- Use Case Diagram,
+- Sequence Diagram.
+Usare questi diagrammi facilita l'analisi dei requisiti, rispetto all'uso di editor di testo tipo Word.
+
+DIAGRAMMI UML. Sono di due tipi:
+- statici: non c'è il tempo,
+- dinamici: c'è il tempo.
+Ogni tipo di diagramma supporta una certa fase dello sviluppo del software.
+
+USE CASE DIAGRAM (E SEQUENCE): per requisiti funzionali.
+
+DIAGRAMMI PER LE CLASSI (E STATE, ACTIVITY): per il design.
+
+USE CASE DIAGRAM
+----------------
+
+Serve per descrivere i requisiti.
+
+USE CASE: rappresenta gli scenari possibili.
+
+SCENARIO: una funzionalità (requisito) del sistema visto dal punto di vista dell'utente del sistema. E' una COSA che fa il sistema vista dal punto di vista dell'utente finale, non dal nostro punto di vista.
+
+ATTORE: gli oggetti che interagiscono col nostro sistema.
+
+USE CASE DIAGRAM: tutte le cose precedenti messe assieme.
+
+ESEMPIO: vogliamo definire un TIME TRACKER.
+L'attività di creazione dello use case diagram si divide in passi.
+
+1. Definire gli attori.
+Attore: chiunque o qualunque cosa che interagisca col nostro sistema.
+Definire i privilegi degli utenti umani e non umani.
+
+2. Definire gli use case.
+Use case: scenari, funzionalità, funzioni dal punto di vista del COSA.
+Trucchi: per definire le necessità degli attori si trovano i verbi all'interno del testo dato dal cliente.
+
+3. Definire le relazioni.
+Definire CHI (attori) fa CHE COSA (funzionalità).
+
+Fatto: tipicamente, questo diagramma UML è l'unico diagramma UML che vedrà l'utente finale.
+Questo diagramma UML costituisce il documento dei requisiti.
+
+Puntualizzazioni: gli attori non defono essere per forza persone umane. Gli attori rappresentano ruoli e non istanze. 20 impiegati costituiscono un attore, non 20 attori.
+
+[IBM Rational Software Architect: useremo questo software per creare diagrammi UML. MEglio usare Windows perchè la versione per Linux non è completa]
+
+ESEMPIO: automatizzare l'ordine e la fatturazione delle attività di un ristorante. Tutti i camerieri hanno un palmare. Il palmare invia ordini alla cucina e al cassiere, riceve disponibilità di menù dalla cucina. Una volta pizzato l'ordine, l'ordine può essere cambiato dal cliente entro 5 minuti o entro un timeout stabilito dal cuoco. Il sistema gestisce anche la gestione dei tavoli. La prenotazione può essere fatta per telefono o via internet.
+
+Seguo questi passi:
+
+1. elenco gli attori,
+2. elenco delle funzionalità,
+3. collegamento tra attori e funzionalità.
+
+Note: i pallini (cioè gli use case) sono le attività che deve fare il PROGRAMMA, non gli utenti.
+Se l'attore esterno è il cameriere, dobbiamo prenderci in carico anche la costruzione del palmare. Se l'attore esterno è il palmare, allora dobbiamo fare solo il software PER un palmare, il palmare non ci riguarda.
+Gli USE CASE sono miei e devo gestirli, gli aTTORI sono esterni e non mi riguardano (devo solo relazionarmi con loro, ma non implementarli).
+
+"Prenotare un tavolo" è troppo generico, per l'ingegneria del software uno use case così è un incubo. Va dettagliato meglio cosa vuol dire "prenotare un tavolo".
+Chi è che prenota il tavolo all'interno del sistema? Il cliente o il cassiere? Se il cliente telefona è il cassiere, NON il cliente.
+Inoltre, la prenotazione può avvenire anche con sistemi molto complicati, per esempio il riconoscimento vocale telefonico, che ha un effort enorme: quindi bisogna chiarire cosa si  intende PRIMA di firmare il contratto.
+
+Documentazione: ogni USE CASE in UML ha una voce "documentazione", in cui si possono chiarire eventuali use case particolarmente critici. Si usa molto poco, si cerca di usare il meno possibile. Ci sono vari standard, ma non c'è una regola generale.
+
+Use Case: consigli:
+- nel nome dell'etichetta deve esserci sempre un verbo,
+- nel nome non bisogna andare troppo nel dettaglio,
+- cerchiamo di compattare gli user case, per non averne troppi.
+
+RELAZIONI
+Associazione: tra attore e user case.
+Generalizzazione: tra attore e attore. A -> B vuol dire che A può fare tutte le cose che può fare B. Cioè A estende B, A generalizza B.
+Inclusione, estensione: tra use case.
+Generalizzazione tra use case: tra use case, poco usato.
+
+ESERCIZIO: un cinema multisala. Prenotazione dei posti. L'utente può comprare sia biglietti sia abbonamenti. Anche per telefono. Pagamento in contanti o con carta di credito. Un supervisore può stampare lo stato di vendite di un particolare show. Una segretaria aggiorna la lista degli show disponibili.
+
+TERZA LEZIONE
+=============
+
+IBM: c'è un contest a cui si puo' partecipare. Non è necessario avere esperienza. Riguarda l'ingegneria del software.
+
+Consiglio: fare gli esercizi di volta in volta durante le lezioni. Tool consigliato: IBM RSA su Windows.
+
+Esercizio: torniamo all'esercizio del mustisala.
+Proponiamo tre diverse soluzioni.
+
+SOLUZIONE 1.
+Ci sono 3 attori: casher, secretary, supervisor. Ci sono vari use case, cioè i requisiti funzionali del sistema. Gli attori si relazionano col sistema attraverso use case.
+Abbiamo seguito alla lettera il testo dell'esercizio: abbiamo trovato i verbi e i verbi sono gli use case del diagramma. Questa è una soluzione molto base.
+Nota: dato questo diagramma, l'espressione "also by phone", visto che manca l'attore user, viene implementata come? Il cliente telefona al cassiere e il cassiere fa. L'utente non interagisce col sistema.
+Nota: un attore deve esserci sono se interagisce col sistema.
+
+Esame: 2 domande di teoria. 2 domande di laboratorio (di cui 1 è fare uno use case diagram)
+
+SOLUZIONE 2.
+E' come la 1, ma è comparso l'attore user.
+Lo user puo' telefonare. Questo cosa implica? Lo user non telefona al cassiere, ma al sistema stesso. Come si fa? Cavoli nostri. La cosa piu' semplice è usare i tastierini numerici, oppure si puo' creare un sintetizzatore vocale, eccetera.
+
+SOLUZIONE 3.
+Avere "buy ticket" vuol dire gestire anche il pagamento. In questa soluzione, per il pagamento si chiama il causa il servizio VISA, per l'uso della carta di credito. Non gestisco direttamente io il pagamento, ma interagento con VISA.
+
+SUGGERIMENTI.
+Attori: deve essere fuori dal sistema, servono per definire i confini del sistema, non deve esserci l'attore sistema. Non è detto che l'attore debba essere una persona, puo' essere un software, un hardware, qualsiasi cosa, purche' fuori dal sistema.
+C'è solo un caso in cui l'attore puo' essere quasi il sistema: quando dobbiamo gestire delle funzionalita' non legate ad una persona, per esempio "fare un backup". Regola: tutti gli use case devono essere associati ad un attore. Lo use case "fai backup" che attore ha? Ha come attore il sistema? Quasi, ma non esattamente. Lo use case:
+1. o viene associato a chi beneficia dello use case, in questo caso l'admin,
+2. o viene associato a chi scatena lo use case, in questo caso il clock di sistema, perche' e' il clock di sistema che fa partire il backup,
+3. o viene associato al sistema, ma è una scelta sconsigliata. E' meglio non avere mai l'utente sistema.
+
+RELAZIONI DELLO USE CASE DIAGRAM
+--------------------------------
+
+Riassunto: fin'ora, gli ingredienti di uno use case diagram sono:
+- attore,
+- use case,
+- relazioni.
+
+RELAZIONI
+
+- Relazione tra attore e use case.
+Relazione semplice, non direzionata, non tratteggiata, tra attore e use case.
+
+- Relazione tra attori.
+Relazione direzionata, tra due attori (detta generalizzazione). A->B vuol dire che gli use case di B possono essere fatti anche da A, cioeè "A generalizza B". E' l'unica relazione permessa tra attori.
+
+- Relazione tra use case.
+E' tratteggiata (qualche notazione la mette continua) e direzionata. Puo' essere l'inclusione o l'estensione.
+La generalizzazione è stata deprecata.
+A-include->B vuol dire che uno step di A è un'esecuzione di B. Cioe' se eseguo A, allora prima o poi per forza eseguo B, obbligatoriamente.
+L'estensione è la relazione duale.
+
+Le relazioni servono per semplificare i diagrammi.
+C'è il problema di esplosione del numero di use case. Bisogna diminuire il numero di use case perche' altrimenti il cliente non capisce.
+Ci sono tecniche per gestire la crescita del numero di use case all'interno di un diagramma.
+Ci sono due tecniche.
+
+TECNICHE PER RIDURRE IL NUMERO DI USE CASE
+------------------------------------------
+
+- Fattorizzare gli use case.
+- Creare dei diagrammi a pacchetto, divisi in directory.
+Il sistema quindi è diviso in piu' diagrammi.
+
+FATTORIZZARE GLI USE CASE
+Bisogna ridurre il numero di use case. Come? Usando l'include, l'extend e l'accorpamento.
+Per esempio, posso unire due use case e fondendoli, generalizzarli e ottenere un unico use case un po' piu' generale.
+La difficolta' e' trovare il bilanciamento tra dettaglio e astrazione.
+Regola d'oro: quando si va dal cliente, non bisogna spaventarlo o confonderlo.
+
+ALTRA POSSIBILITA'
+Si possono creare due use case diagram, uno strategico (di alto livello, che verra' presentato all'untente finale e firmato dall'utente finale) e uno di sistema (piu' nel dettaglio). L'ordine puo' essere invertito.
+Eventualmente, con l'utente si puo' vedere anche il diagramma di sistema.
+
+CREARE PACCHETTI
+
+Le tecniche possono essere usate anche contemporaneamente.
+
+ESEMPIO
+Come si fanno a individuare i pacchetti?
+I pacchetti devono essere elementi distinti del diagramma. Come si individuano?
+Si cercano le componenti connesse, che corrispondono alle componenti indipendenti.
+Se per esempio due componenti comunicano solo attraverso uno use case, psso duplicare lo use case e ottenere quindi due componenti connesse (artificiosamente ma con poco sforzo).
+All'interno di ciascun package c'è uno use case diagram.
+Suggerimento: se fin dalle prime fasi riusciamo ad definire un software modularizzabile, potremmo essere facilitati durante lo sviluppo futuro.
+
+
+Riassunto: i passi per ridurre il numero di use case sono i seguenti, in ordine:
+1 - mega use case diagram
+2 - si riducono gli use case usando include, extend, accorpamento
+3 - si divide in pacchetti, eventualmente forzando
+4 - si fanno due livelli di use case diagram: strategico e di sistema.
+
+Mai presentarsi dal cliente con troppi use casi.
+
+ESERCIZIO. E' un esercizio da esame.
+Previsione: all'inizio ci sono 25 use case. Successivamente si riduce il loro numero. In teoria non serve arrivare alla pacchettizzazione.
+Consegna: costruire un editor grafico. I grafici devono avere nodi, archi, commenti. L'utente costruisce grafici. I nodi e gli archi possono avere etichette. L'utente puo' aggiungere, togliere e muovere nodi e archi. Per aggiungere un arco, l'utente deve selezionare il punto di partenza e il punto di arrivo. Gli archi possono essere direzionali, non direzionali o bidirezionali. Quando muovo un nodo, il diagramma muove anche gli archi connessi al nodo. I commenti possono essere messi ovunque. Quando l'utente seleziona il commento, il cursore cambia da freccia a I-beam.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
