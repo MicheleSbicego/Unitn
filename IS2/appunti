@@ -155,7 +155,7 @@ Il server viene chiamato con una stringa che identifica le variabili, che va par
 Invece di usare createserver usiamo una libreria piu' completa, che è express.
 Creo express, gli dico la porta con set, gli dico il contenuto del server con get, gli dico di ascoltare con listen. Post vedremo dopo a cosa serve.
 
-
+Come far comunicare in modo piu' semplice e strutturato l'applicazione. Per inviare da lato client a lato server delle strutture complesse serve json.
 
 
 
