@@ -207,12 +207,74 @@ ESERCIZIO. E' un esercizio da esame.
 Previsione: all'inizio ci sono 25 use case. Successivamente si riduce il loro numero. In teoria non serve arrivare alla pacchettizzazione.
 Consegna: costruire un editor grafico. I grafici devono avere nodi, archi, commenti. L'utente costruisce grafici. I nodi e gli archi possono avere etichette. L'utente puo' aggiungere, togliere e muovere nodi e archi. Per aggiungere un arco, l'utente deve selezionare il punto di partenza e il punto di arrivo. Gli archi possono essere direzionali, non direzionali o bidirezionali. Quando muovo un nodo, il diagramma muove anche gli archi connessi al nodo. I commenti possono essere messi ovunque. Quando l'utente seleziona il commento, il cursore cambia da freccia a I-beam.
 
+Soluzioni dell'esercitatore:
+1 - Ha pochi use case. Non c'è il caso d'uso 'muovi arco' perchè è un sottocaso di 'muovi nodo'. Non posso cambiare la direzione dell'arco dopo averlo creato.
+2 - E' una soluzione un po' piu' organizzata. Ci sono meno dettagli. Con 'elemento' si intende un oggetto qualsiasi.
 
+LEZIONE
+=======
 
+Fin'ora abbiamo visto la fase di acquisizione dei requisiti.
+Gli use case diagram servono per la raccolta dei requisiti.
 
+Parliamo di fase di design.
+Vediamo altri tipi di diagrammi: sequence, state, classi (che è il diagramma principe del design).
 
+SEQUENCE DIAGRAM
+----------------
 
+Nello use case diagram non bisogna inserire il tempo, è solo una fotografia, non bisogna inserire le sequanze delle azioni.
+Il sequence diagram specifica la successione delle azioni. A volte viene messo nel documento dei requisiti.
+Il sequance mostra come evolve il sistema nel tempo, e come collaborano tra loro i vari oggetti.
 
+Esempio. Come funziona una telefonata.
+Il tempo scorre verso il basso. Le colonne sono gli oggetti. Le frecce orizzontali sono le azioni, dette 'messaggi'. I messaggi possono avere degli attributi: condizioni, iterazioni; ma non sono molto usate.
+
+Come passare da use case diagram a sequence case diagram?
+- trasformare gli attori in oggetti,
+- trasformare gli use case in messaggi.
+
+ESERCIZIO.
+Prendiamo lo use case del ristorante e costruiamo il sequence diagram.
+La prima cosa da fare è trasformare meccanicamente attori in oggetti e use case in messaggi.
+
+Normalmente, non basta descrivere la sequenza ideale, serve descrivere anche le varianti. Quindi serve un altro tipo di diagramma: lo state-machine/activity diagram.
+Sono due diagrammi ma sostanzialmente sono la stessa cosa.
+
+STATE DIAGRAM
+-------------
+
+Elenca gli stati del sistema e i passaggi da uno stato all'altro. Le transizioni sono associate a delle condizioni, ed eventualmente ad altre azioni.
+
+Con questo diagramma posso andare ad un livello altissimo di dettaglio.
+Vengono gestiti anche i casi in cui qualcosa non funziona.
+
+Il sequence descrive cosa succede quando tutto va bene.
+Lo state aggiunge dettagli riguardanti quando qualcosa va storto.
+
+Lo state diagram ha un fratello quasi gemello: l'activity diagram.
+
+ACTIVITY DIAGRAM
+----------------
+
+E' uguale allo state ma con qualche funzione i piu'
+Le funzioni in piu' sono:
+- fork (barra nera): lancio in parallelo piu' task
+- join (barra nera):  il processo viene lanciato solo dopo che tutti i processi specificati sono terminati
+- decisione (rombo): è un modo per rimarcare una possibile scelta tra piu' opzioni.
+
+E' possibile, a differenza dello state, aggiungere delle swimlanes (corsie) per evidenziare dal punto di vista grafico chi fa che cosa.
+Ogni corsia rappresenta un oggetto. All'interno della corsia sono rappresentate le attività dell'oggetto.
+
+-----------------
+
+Quando usare sequence e quando usare activity?
+Sequence: propone una descrizione dell'intero progetto. Descrive l'utilizzo ideale del sistema, senza errori o variazioni.
+Activity: normalmente viene fatto solo per una parte del sistema, perchè permette di andare molto piu' nel dettaglio. Descrive anche errori e variazioni dell'uso ideale del sistema.
+
+ESERCIZIO.
+In un esercizio precedente abbiamo fatto il sequence diagram del ristorante.
+Ora, partendo dal sequence, fare l'activity. Dobbiamo aggiungere tutte le varianti possibili.
 
 
 
