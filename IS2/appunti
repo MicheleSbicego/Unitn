@@ -157,10 +157,98 @@ Creo express, gli dico la porta con set, gli dico il contenuto del server con ge
 
 Come far comunicare in modo piu' semplice e strutturato l'applicazione. Per inviare da lato client a lato server delle strutture complesse serve json.
 
+LEZIONE
+=======
 
+NPM
+---
 
+Lo spieghiamo.
 
+L'NPM è un comando aggiuntivo di node per installare librerie aggiuntive.
+Per esempio quando abbiamo
+var express = require('express');
+abbiamo una libreria aggiuntiva.
+($ npm init) crea un file json che contiene metadati sul progetto e le dipendenze della libreria.
 
+Esempio d'uso:
+($ npm init) chiede in modo interattivo i dati:
+(entry point) è dove mettiamo il codice di node, per esempio index.js.
+Alla fine viene creato il file package.json.
+($ npm init --yes) crea un file di default, senza parte interattiva.
+
+($ npm install express --save) installa la libreria e inserisce anche le dipendenze.
+
+E' meglio mettere in .gitignore "node", in modo da ignorare la cartella node_modules, che contiene tutte le librerie scaricate. Sara' il server a scaricare le librerie da cui si dipende, non dobbiamo metterle noi nella repository (lo vedremo piu' avanti).
+
+NODE
+----
+
+L'ultima volta abbiamo visto node.
+Abbiamo visto come inviare e ricevere parametri.
+
+app.use viene chiamato ogni volta che c'è la richiesta.
+Al posto di app.use si puo' mettere app.get o app.post e distinguere i due casi: quando viene inviata o quando viene richiesto qualcosa.
+
+Come inviare oggetti json al server.
+------------------------------------
+
+PARTE CLIENT.
+Il bottone non è submit, ma richiama la funzione send.
+Questo perchè vogliamo processare le cose.
+
+SEND. Prendiamo la variabile del form, collezioniamo tutti i parametri del form.
+(var xhr): invece di mandare le cose come un form, creiamo un oggetto che invia il flusso di informazioni al server: sostanzialmente stiamo riscrivendo il submit.
+
+(JSON.stringify(data)): formatta l'oggetto in termini di json.
+(xhr.send): inviamo il file json al server.
+
+Leggere l'oggetto json dal server.
+----------------------------------
+
+(xhr.onloadend).
+Prendi la risposta e immagazzinala.
+
+Guardiamo index.js.
+-------------------
+
+headers["Access-Control-Allow-Origin"]: permette di ricevere oggetti di tipo diverso.
+
+"application/json": è il formato di risposta. Adesso usiamo il tipo json, non per esempio le stringhe.
+
+app.use(bodyParser...): bodyParser è una libreria esterna che permette di interpretare quello che riceviamo. Qui stiamo dicendo che il flusso delle informazioni che arriva deve essere interpretato come json.
+
+var otherArray: oggetti normalissimi.
+var json: oggetto json.
+JSON.stringify: trasforma in formato json.
+response.end(json): spediamo l'oggetto json.
+
+Esempio:
+--------
+($ node index.js)
+Successivamente in html premiamo "SEND JSON" e poi vediamo che arrivano i dati.
+
+ESERCIZIO
+---------
+
+Realizzare un'applicazione per fare management di impiegati. Non c'è il client server, si fa tutto su node.js.
+I dipendenti hanno un ID. Si puo' cercare l'utente con un certo ID, e devono essere stampati i suoi dati.
+Se l'Id non c'è non si lamenta ma mi fa vedere che non ci sono dati.
+Dati: nme, cognome, livello, salario.
+Bottone "INSERISCI DIPENDENTE" che inserisce l'ID con i dati specificati.
+Posson modificare i dipendenti, direttamente: tutto è nella stessa schermata.
+Bottoni: "cerca dipendente", "rimuovi dipendente", "inserisci dipendente".
+Se non metto l'ID, mi deve inserire i dati associati al primo ID libero.
+Se inserisco due ID uguali, sovrascrive i dati (cioè li modifica).
+
+Suggerimenti:
+- non mettersi subito a programmare, ma pensiamo a quello che dobbiamo fare. Dobbiamo seguire il model-view control. La parte di model deve essere in un file separato, che fa la gestione dei dati. Per la parte di view abbiamo il template. Per la parte di control abbiamo index.js.
+Quindi ci sono 3 parti: model, view, control.
+- creiamo un nuovo oggetto nella parte di model con le robe che srvono per il template, invece di mettere tutto in index.js. E lo passiamo a index.js come variabile.
+- "mostra/nascondi scheda" è nel lato client, quindi deve esserci uno script nel lato client. Non lo dobbiamo mettere in lato client ma in un file a parte che viene preso dal server. Il server deve poter inviare lo script al client. Tuttavia: è meglio evitare di esporre le strutture delle nostre cartelle interne, quindi quando passiamo lo script li mettiamo tutti nella stessa cartella nel client. Quindi quando il client accede a /scripts in realtà il server invia lo script /...path_interno.../script.
+
+(app.use(a, b)): quando viene richiesta a, viene eseguita b.
+E' una specie di remap di b in a.
 
 
 
