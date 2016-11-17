@@ -250,10 +250,68 @@ Quindi ci sono 3 parti: model, view, control.
 (app.use(a, b)): quando viene richiesta a, viene eseguita b.
 E' una specie di remap di b in a.
 
+LEZIONE
+=======
 
+ESAME
+-----
+Scritto e orale.
+Teoria e pratica.
+Scritto: scrittura del codice.
+Pratica: mvc, testing, deploy su eroco. Lato client, lato server.
+Cose importanti da fare per la pratica: deployment su eroco, usare gitlab in modo sensato, usare javascript design pattern (mvc), definizione dell'api, test case, code review.
+Bisogna realizzare l'applicazione di Michela per l'esame. Non deve essere completa, perchè questo non è un corso di programmazione, ma deve essere corretta dal punto di vista dei metodi e delle regole viste a lezione.
 
+ESERCIZIO
+---------
+Realizzare l'applicazione per Michela. Front-end e back-end seguendo le tecniche e le regole imparate a lezione.
 
+FARE DEPLOY DI UN'APPLICAZIONE
+------------------------------
 
+Oggi parleremo di questo.
+
+Ci sono vari servizi per la creazione di server. Noi useremo Heroku. Serve per creare server node.js.
+
+Creare un nuovo progetto su github, clonarlo in locale sulla nostra macchina.
+
+Per usare Heroku dobbiamo togliere il proxy nelle nostre macchine. Ma in teoria è già tolto.
+
+($ heroku --version) per installare, aggiornare e vedere la versione di heroku.
+Andiamo nella cartella di git locale e digitiamo ($ heroku create): in questo modo associamo la repository all'account di heroku. In altre parole, nella nostra cartella locale abbiamo due repository coincidenti: quella di github e quella di heroku.
+($ more .git/config) qui vediamo i dettagli del server git di heroku.
+
+Creiamo due branch: test e dev.
+
+Nota: i branch master, test, dev non devono essere necessariamente incatenati: possono essere paralleli, per esempio creo test e dev indipendentemente, e dopo faccio git push origin dev per spostare la roba da test a dev.
+
+$ npm init
+creiamo il nostro package.json per la nostra applicazione node.js
+
+Modifichiamo il file json per heroku. Aggiungiamo ("start": "node index.js"), che è il comando per far partire il server.
+
+origin è il nome del repository su github (dato di default in .git/config).
+Pushamo su dev.
+Ci spostiamo su test. Mergiamo dev in test. Facciamo eventuali test.
+Pushamo test.
+
+Adesso siamo sicuri che l'applicazione va, e vogliamo fare il deploy.
+Intanto mettiamo tutto su master.
+
+($ git push <repository> <branch>)
+
+Vogliamo fare il deployment su heroku.
+
+($ git push heroku master): pushamo non su github ma su heroku.
+
+($ heroku ps:scale web=1) crea il server.
+Adesso abbiamo fatto il deployment. Per vedere se funziona facciamo ($ heroku open): questo apre la pagina web.
+
+Se ci sono errori scriviamo ($ heroku logs --tail) e vediamo il log.
+
+Creiamo un file "Procfile" con contenuto "web: node index.js".
+
+Per testare il locale: ($ heroku local web).
 
 
 
