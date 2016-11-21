@@ -276,10 +276,85 @@ ESERCIZIO.
 In un esercizio precedente abbiamo fatto il sequence diagram del ristorante.
 Ora, partendo dal sequence, fare l'activity. Dobbiamo aggiungere tutte le varianti possibili.
 
+LEZIONE
+=======
+
+In generale.
+------------
+Adesso siamo nella fase di design.
+Prima eravamo nella fase dei requisiti.
+C'è una fase di transizione da COSA a COME, non c'è una distinzione netta. Si usano activity diagram e sequence diagram per eseguire la transizione da COSA a COME.
+Si ragiona a passate: di ragione per raffinazioni successive.
+Il provare a fare l'activity diagram porta a farsi molte domande. E' giusto e bisognerebbe che fosse così, perchè vuol dire che stiamo facendo l'attività giusta.
+
+Sequence diagram: esecuzione ideale del programma, senza problemi.
+Activity diagram: descrivo tutto quello che puo' succedere, anche i problemi.
 
 
 
+Esercizi.
+---------
+Vediamo le soluzioni degli esercizi della volta scorsa.
 
+Activity diagram per il ristorante.
+-----------------------------------
+Ci sono piu' flussi. C'è l'evoluzione del flusso base ideale, che è quello del sequence diagram. Ma ci sono anche altri flussi: per esempio il caso in cui il tavolo non è disponibile.
+Attenzione: se il tavolo non è disponibile, il flusso termina. Questa è una decisione di design. Potevo fare altre cose: per esempio potevo creare un'attivita' del tipo "cerca date successive (a quella chiesta dal cliente) in cui il tavolo e' disponibile".
+Questo activity diagram è ababstanza complesso ma non è esaustivo, non gestisce tutti i casi possibili. Per esempio gestisce male il caso in cui il tavolo non è disponibile, oppure gestisce male il caso in cui la pietanza non e' disponibile (anche se non c'è la pietanza non c'è, viene lo stesso confermato l'ordine: il design rappresentato dal diagramma è sbagliato, devo prevedere un flusso uscente da "verifica disponibilita' pietanza" in piu', che torni per esempio a "ordina pietanza").
+Si potrebbero invertire "verifica disponibilità pietanze" e "ordina pietanze", cioè eseguire prima "verifica disponibilità pietanze" e dopo "ordina pietanze". E' una scelta di design. Creare questo diagramma aiuta a fare scelte di design, cioè scelte di questo tipo.
+Un'altra mancata gestione: non si possono fare altri ordini che vadano nello stesso scontrino.
+Mancata gestione: se uno modifica l'ordine, non viene spiegato cosa succede all'ordinazione precedente che e' stata modificata. C'è il rischio che nello scontrino ci siano entrambe le ordinazioni. Bisogna evidenziare il fatto che il piatto precedente venga cancellato. Prima di "ordinare pietanze" dovrebbe esserci "modifica della lista delle cose ordinate".
+Tipicamente non è prevista l'attività "attendi", non si usa.
+L'activity diagram dovrebbe avere al piuì 10 attività.
+
+DESIGN ARCHITETTURALE
+---------------------
+Entriamo in questa fase.
+Vediamo il diagramma UML principe per la fase di design: il class diagram.
+
+Ripasso.
+Le fasi di sviluppo software: requisiti, design, implementazione.
+Lo use case è in requisiti.
+Il sequence e activity sono in parte in requisity e in design.
+Il class è in design e implementazione, e in parte in requisiti. E' di moda usare le classi anche per i requisiti, ma è una cattiva moda, da evitare.
+
+DIAGRAMMA DELLE CLASSI.
+-----------------------
+E' costituito dalle classi (rettangoli con tre campi), dalle associazioni (linee) e dagli estremi delle associazioni.
+All'interno della classe abbiamo: nome, attributi, operazioni. Il livello di dettaglio e' arbitrario, lo decidiamo noi.
+Le relazioni: non basta una linea, vanno aggiunte delle informazioni:
+- nome (poco importante),
+- navigabilità (o direzionalita') (possiamo anche ignorare questa informazione, non è molto importante, serve solo per sapere come leggere il diagramma, cioè per dare una gerarchia alle classi, in modo da sapere da quale classe bisogna partire per leggere il diagramma),
+- molteplicita' (importante),
+- ruolo (importante).
+Non conviene duplicare le associazioni per inserire anche l'inversa: con un'unica associazione definiamo entrambe le direzioni, giocando bene sulla molteplicita' e sul ruolo.
+Molteplicita' e ruoli possono essere messi in entrambe le direzioni.
+
+OPERATIVAMENTE.
+---------------
+Come si costruisce il class diagram?
+1 - Identificare le classi.
+Se abbiamo lo use case diagram, ciascun elemento diventa una classe: sia attori che use case. E poi si raffina.
+Se abbiamo il documento dei requisiti, si prendono tutti i termini.
+2 - Arricchire le classi.
+Cioè definire gli attributi e i metodi.
+3 - Stabilire le associazioni.
+Bisogna capire se due classi hanno qualcosa in comune, interagiscono tra loro, una contiene l'altra, una legge informazioni dall'altra, eccetera.
+
+Nella fasi di implementazione, possono essere aggiunti dettagli (attributi, metodi) a quello che c'è nel diagramma delle classi. Non bisogna stravolgere il diagramma delle classi, perchè è stata creata in quel modo per motivi di design, e non dobbiamo modificare il design.
+
+NOTA. Tutto quello che scriviamo nel diagramma delle classi viene generato automaticamente nel linguaggio ad oggetti che specifichiamo, da dei tool appositi.
+
+ESEMPIO. Nel nostro esempio (il primo), perchè c'è la classe Work? Cos'è la classe Work? Per capirlo, guardiamo le molteplicita'. Spiegazione: un utente puo' essere assegnato a piu' attivita' ma in un determinato momento puo' svolgerne solo una.
+Caratteristica: con questo design, ad un Work puo' lavorare un solo lavoratore, non piu' di uno.
+
+ESERCIZIO.
+----------
+Esaminare il diagramma delle classi (il secondo esempio). Trovare a cosa servono le classi.
+
+ESERCIZIO.
+----------
+Creare il diagramma delle classi massimizzando coesione e minizzando accoppiamento.
 
 
 
