@@ -313,11 +313,114 @@ Creiamo un file "Procfile" con contenuto "web: node index.js".
 
 Per testare il locale: ($ heroku local web).
 
+LEZIONE
+=======
 
+Esame. Il 7 Dicembre c'è una prova simile all'esame che forse verrà valutata.
 
+Oggi parliamo di API: sono funzioni che possiamo esporre al pubblico in modo che possano essere utilizzate da programmi terzi.
 
+Le API aiutano lo sviluppo del codice. Bisogna capire quali sono le API, documentarle e poi svilupparle.
 
+API
+---
 
+DEFINIZIONE.
+Le API sono definite dal percorso: web è www._.it/<API_da_chiamare>.
+Per esempio:
+www._.it/hw (hello world)
+www._.it/studenti/stat (statistiche degli studenti)
+Le API sono definite dal metodo con cui le chiamiamo:
+www._.it/studenti/stat/get
+www._.it/studenti/stat/post
+Le API sono definite dal formato, dai parametri, dalla risposta, dagli header.
+
+HEADER.
+Sono tanti, ne vediamo solo 3.
+Se dal lato server riceviamo:
+2xx vuol dire "va bene"
+202 vuol dire "accetto ma sto ancora processando il risultato"
+202 vuol dire "accetto ma non ti do' il risultato"
+4xx vuol dire "erroe"
+404 vuol dire "non trovato"
+401 vuol dire "non sei autorizzato"
+406 vuol dire "parametri non accettabili"
+5xx vuol dire "errore nel server"
+500 vuol dire "?"
+501 vuol dire "AI non implementato".
+
+SE2Lab6.
+E' una piccola applicazione.
+Ci sono vari API.
+La parte di dati e della loro gestione è in userManager.js.
+La parte di script è in script.js. Volendo si possono fare anche piu' file per gli script.
+Dobbiamo installare da soli le librerie richieste.
+
+index.js
+express è la libreria per creare il server.
+utils è per fare inspecting dei dati.
+cors serve per questioni tecniche: permette lo scambio di dati tra environment diversi.
+
+app.get('<indirizzo_dell_API>'
+        function
+          {
+            response.writeHead(<codice>)
+          }
+       )
+
+DEFINIRE LE API
+Usiamo il linguaggio "swag": "editor.swagger.io".
+E' un linguaggio per documentare il nostro API, in modo che eventualmente sia usabile e comprensibile anche da qualcun altro.
+swag è composto da una sintassi (a sinistra) e da una tabella (a destra).
+
+paths:
+  <descrizione_dell_API>
+
+Esercizio. Usare swag su tutte le API.
+
+Nota swag: l'oggetto json non lo definiamo ogni volta per ciascuna API, lo definiamo in un posto e poi facciamo riferimento a quel posto in ciascuna API.
+
+Per il progetto: prendere un sottoinsieme non troppo piccolo dell'API e documentarlo molto bene con swag.
+
+TEST
+----
+
+Parliamo della parte di test.
+La parte di test sta tra development (branch dev) e production (branch master).
+
+Bisogna cambiare mentalita': bisogna rompere il codice, non proteggerlo.
+
+Per fare il test usiamo un environment che si chiama "jasmine".
+
+JASMINE
+-------
+
+(progetto$ npm install jasmine) installa jasmine nella cartella corrente.
+(progetto$ ./node_modules/.bin/jasmine init) inizializza jasmine.
+(progetto$ ./node_modules/.bin/jasmine) avvia il jasmine installato nella cartella corrente. Se non ci sono dei test si incazza.
+
+Dobbiamo dire a jasmine dov'è il comando di test. Come? Andiamo in package.json e scriviamo:
+"test": "./node_modules/.bin/jasmine spec"
+
+In "Teaching material/specs.js" troviamo come scrivere i test per jasmine.
+describe <descrizione del test>
+it <il test vero e proprio>
+expect <l'esecuzione del test>
+expect(<oggetto>).<simbolo di confronto>(<oggetto da confrontare>)
+
+Per testare l'applicazione:
+- avviare l'applicazione in locale
+- lanciare il test scrivendo (progetto$ ./node_modules/.bin/jasmine)
+
+Esercizio: testare anche le altre API.
+
+Progetto: queste cose dell'API e dei test devono andare anche nel progetto.
+
+Test/1/APISpec.js
+-----------------
+
+Per fare richieste in alcuni casi abbiamo usato la libreria "client" invece di "require" perchè abbiamo dati json da gestire.
+In alcuni casi abbiamo anche un parametro.
 
 
 
