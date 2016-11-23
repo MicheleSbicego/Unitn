@@ -415,47 +415,10 @@ Per testare l'applicazione:
 Esercizio: testare anche le altre API.
 
 Progetto: queste cose dell'API e dei test devono andare anche nel progetto.
+Nel progetto bisogna testare sia le API piu' importanti sia le funzioni piu' importanti.
 
 Test/1/APISpec.js
 -----------------
 
 Per fare richieste in alcuni casi abbiamo usato la libreria "client" invece di "require" perchè abbiamo dati json da gestire.
 In alcuni casi abbiamo anche un parametro.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
