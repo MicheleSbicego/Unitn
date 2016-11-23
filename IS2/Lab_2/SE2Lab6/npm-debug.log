@@ -1,0 +1,2082 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/node-v4.6.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jasmine' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose install initial load of /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/package.json
+5 warn package.json test@1.0.0 No repository field.
+6 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/package.json
+7 silly cache add args [ 'jasmine', null ]
+8 verbose cache add spec jasmine
+9 silly cache add parsed spec Result {
+9 silly cache add   raw: 'jasmine',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'jasmine',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: 'latest',
+9 silly cache add   type: 'tag' }
+10 silly addNamed jasmine@latest
+11 verbose addNamed "latest" is being treated as a dist-tag for jasmine
+12 info addNameTag [ 'jasmine', 'latest' ]
+13 silly mapToRegistry name jasmine
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry data Result {
+16 silly mapToRegistry   raw: 'jasmine',
+16 silly mapToRegistry   scope: null,
+16 silly mapToRegistry   name: 'jasmine',
+16 silly mapToRegistry   rawSpec: '',
+16 silly mapToRegistry   spec: 'latest',
+16 silly mapToRegistry   type: 'tag' }
+17 silly mapToRegistry uri https://registry.npmjs.org/jasmine
+18 verbose addNameTag registry:https://registry.npmjs.org/jasmine not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/jasmine
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 12:17:30 PM
+22 verbose request id 713ec477e630d23e
+23 http request GET https://registry.npmjs.org/jasmine
+24 http 200 https://registry.npmjs.org/jasmine
+25 verbose headers { server: 'nginx/1.10.1',
+25 verbose headers   'content-type': 'application/json',
+25 verbose headers   'last-modified': 'Thu, 17 Nov 2016 17:54:47 GMT',
+25 verbose headers   etag: 'W/"582deee7-4b1d"',
+25 verbose headers   'content-encoding': 'gzip',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   'content-length': '3381',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   date: 'Wed, 23 Nov 2016 11:17:30 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   age: '292',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-lhr6322-LHR',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1574',
+25 verbose headers   'x-timer': 'S1479899850.344890,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 200,
+26 silly get   { server: 'nginx/1.10.1',
+26 silly get     'content-type': 'application/json',
+26 silly get     'last-modified': 'Thu, 17 Nov 2016 17:54:47 GMT',
+26 silly get     etag: 'W/"582deee7-4b1d"',
+26 silly get     'content-encoding': 'gzip',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     'content-length': '3381',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Wed, 23 Nov 2016 11:17:30 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '292',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-lhr6322-LHR',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1574',
+26 silly get     'x-timer': 'S1479899850.344890,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose get saving jasmine to /home/michele.sbicego/.npm/registry.npmjs.org/jasmine/.cache.json
+28 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+29 verbose makeDirectory /home/michele.sbicego/.npm creation not in flight; initializing
+30 silly makeDirectory /home/michele.sbicego/.npm uid: 65800 gid: 10513
+31 silly addNameTag next cb for jasmine with tag latest
+32 silly addNamed jasmine@2.5.2
+33 verbose addNamed "2.5.2" is a plain semver version for jasmine
+34 silly mapToRegistry name jasmine
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'jasmine',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   name: 'jasmine',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/jasmine
+39 verbose addRemoteTarball https://registry.npmjs.org/jasmine/-/jasmine-2.5.2.tgz not in flight; adding
+40 verbose addRemoteTarball [ 'https://registry.npmjs.org/jasmine/-/jasmine-2.5.2.tgz',
+40 verbose addRemoteTarball   '6283cef7085c095cc25d651e954df004f7e3e421' ]
+41 info retry fetch attempt 1 at 12:17:30 PM
+42 info attempt registry request try #1 at 12:17:30 PM
+43 http fetch GET https://registry.npmjs.org/jasmine/-/jasmine-2.5.2.tgz
+44 http fetch 200 https://registry.npmjs.org/jasmine/-/jasmine-2.5.2.tgz
+45 silly fetchAndShaCheck shasum 6283cef7085c095cc25d651e954df004f7e3e421
+46 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/jasmine/-/jasmine-2.5.2.tgz not in flight; adding
+47 verbose addTmpTarball already have metadata; skipping unpack for jasmine@2.5.2
+48 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+49 silly cache afterAdd jasmine@2.5.2
+50 verbose afterAdd /home/michele.sbicego/.npm/jasmine/2.5.2/package/package.json not in flight; writing
+51 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+52 verbose afterAdd /home/michele.sbicego/.npm/jasmine/2.5.2/package/package.json written
+53 silly install resolved [ { name: 'jasmine',
+53 silly install resolved     description: 'Command line jasmine',
+53 silly install resolved     homepage: 'http://jasmine.github.io/',
+53 silly install resolved     keywords: [ 'test', 'jasmine', 'tdd', 'bdd' ],
+53 silly install resolved     license: 'MIT',
+53 silly install resolved     version: '2.5.2',
+53 silly install resolved     repository:
+53 silly install resolved      { type: 'git',
+53 silly install resolved        url: 'git+https://github.com/jasmine/jasmine-npm.git' },
+53 silly install resolved     scripts: { test: 'grunt && ./bin/jasmine.js' },
+53 silly install resolved     dependencies: { exit: '^0.1.2', glob: '^7.0.6', 'jasmine-core': '~2.5.2' },
+53 silly install resolved     bin: { jasmine: './bin/jasmine.js' },
+53 silly install resolved     main: './lib/jasmine.js',
+53 silly install resolved     devDependencies:
+53 silly install resolved      { grunt: '^0.4.2',
+53 silly install resolved        'grunt-cli': '^0.1.13',
+53 silly install resolved        'grunt-contrib-jshint': '^0.11.0',
+53 silly install resolved        shelljs: '^0.3.0' },
+53 silly install resolved     gitHead: '43a219f832e424039089ec8f916faac3f2f27b4b',
+53 silly install resolved     bugs: { url: 'https://github.com/jasmine/jasmine-npm/issues' },
+53 silly install resolved     _id: 'jasmine@2.5.2',
+53 silly install resolved     _shasum: '6283cef7085c095cc25d651e954df004f7e3e421',
+53 silly install resolved     _from: 'jasmine@latest',
+53 silly install resolved     _npmVersion: '2.12.1',
+53 silly install resolved     _nodeVersion: '0.12.7',
+53 silly install resolved     _npmUser: { name: 'slackersoft', email: 'gregg@slackersoft.net' },
+53 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+53 silly install resolved     dist:
+53 silly install resolved      { shasum: '6283cef7085c095cc25d651e954df004f7e3e421',
+53 silly install resolved        tarball: 'https://registry.npmjs.org/jasmine/-/jasmine-2.5.2.tgz' },
+53 silly install resolved     _npmOperationalInternal:
+53 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+53 silly install resolved        tmp: 'tmp/jasmine-2.5.2.tgz_1474071986100_0.5755787314847112' },
+53 silly install resolved     directories: {},
+53 silly install resolved     _resolved: 'https://registry.npmjs.org/jasmine/-/jasmine-2.5.2.tgz' } ]
+54 info install jasmine@2.5.2 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+55 info installOne jasmine@2.5.2
+56 verbose installOne of jasmine to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6 not in flight; installing
+57 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+58 verbose makeDirectory /home/michele.sbicego/.npm/_locks creation not in flight; initializing
+59 silly makeDirectory /home/michele.sbicego/.npm/_locks uid: 65800 gid: 10513
+60 verbose lock using /home/michele.sbicego/.npm/_locks/jasmine-dcb91c2c4159b8d1.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+61 silly install write writing jasmine 2.5.2 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+62 verbose unbuild node_modules/jasmine
+63 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+64 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+65 verbose tar unpack /home/michele.sbicego/.npm/jasmine/2.5.2/package.tgz
+66 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+67 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine is being purged
+68 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+69 silly gunzTarPerm modes [ '755', '644' ]
+70 silly gunzTarPerm extractEntry package.json
+71 silly gunzTarPerm extractEntry README.md
+72 silly gunzTarPerm extractEntry Gruntfile.js
+73 silly gunzTarPerm extractEntry .travis.yml
+74 silly gunzTarPerm extractEntry bin/jasmine.js
+75 silly gunzTarPerm extractEntry lib/command.js
+76 silly gunzTarPerm extractEntry lib/exit.js
+77 silly gunzTarPerm extractEntry lib/jasmine.js
+78 silly gunzTarPerm extractEntry lib/printDeprecation.js
+79 silly gunzTarPerm extractEntry lib/examples/jasmine.json
+80 silly gunzTarPerm extractEntry lib/filters/console_spec_filter.js
+81 silly gunzTarPerm extractEntry lib/reporters/completion_reporter.js
+82 silly gunzTarPerm extractEntry lib/reporters/console_reporter.js
+83 silly gunzTarPerm extractEntry tasks/jasmine.js
+84 verbose write writing to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/package.json
+85 info preinstall jasmine@2.5.2
+86 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/package.json
+87 silly prepareForInstallMany adding exit@^0.1.2 from jasmine dependencies
+88 silly prepareForInstallMany adding glob@^7.0.6 from jasmine dependencies
+89 silly prepareForInstallMany adding jasmine-core@~2.5.2 from jasmine dependencies
+90 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/package.json
+91 silly cache add args [ 'exit@^0.1.2', null ]
+92 verbose cache add spec exit@^0.1.2
+93 silly cache add args [ 'glob@^7.0.6', null ]
+94 verbose cache add spec glob@^7.0.6
+95 silly cache add parsed spec Result {
+95 silly cache add   raw: 'exit@^0.1.2',
+95 silly cache add   scope: null,
+95 silly cache add   name: 'exit',
+95 silly cache add   rawSpec: '^0.1.2',
+95 silly cache add   spec: '>=0.1.2 <0.2.0',
+95 silly cache add   type: 'range' }
+96 silly addNamed exit@>=0.1.2 <0.2.0
+97 verbose addNamed ">=0.1.2 <0.2.0" is a valid semver range for exit
+98 silly addNameRange { name: 'exit', range: '>=0.1.2 <0.2.0', hasData: false }
+99 silly mapToRegistry name exit
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry data Result {
+102 silly mapToRegistry   raw: 'exit',
+102 silly mapToRegistry   scope: null,
+102 silly mapToRegistry   name: 'exit',
+102 silly mapToRegistry   rawSpec: '',
+102 silly mapToRegistry   spec: 'latest',
+102 silly mapToRegistry   type: 'tag' }
+103 silly mapToRegistry uri https://registry.npmjs.org/exit
+104 verbose addNameRange registry:https://registry.npmjs.org/exit not in flight; fetching
+105 silly cache add parsed spec Result {
+105 silly cache add   raw: 'glob@^7.0.6',
+105 silly cache add   scope: null,
+105 silly cache add   name: 'glob',
+105 silly cache add   rawSpec: '^7.0.6',
+105 silly cache add   spec: '>=7.0.6 <8.0.0',
+105 silly cache add   type: 'range' }
+106 silly addNamed glob@>=7.0.6 <8.0.0
+107 verbose addNamed ">=7.0.6 <8.0.0" is a valid semver range for glob
+108 silly addNameRange { name: 'glob', range: '>=7.0.6 <8.0.0', hasData: false }
+109 silly mapToRegistry name glob
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry data Result {
+112 silly mapToRegistry   raw: 'glob',
+112 silly mapToRegistry   scope: null,
+112 silly mapToRegistry   name: 'glob',
+112 silly mapToRegistry   rawSpec: '',
+112 silly mapToRegistry   spec: 'latest',
+112 silly mapToRegistry   type: 'tag' }
+113 silly mapToRegistry uri https://registry.npmjs.org/glob
+114 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+115 silly cache add args [ 'jasmine-core@~2.5.2', null ]
+116 verbose cache add spec jasmine-core@~2.5.2
+117 silly cache add parsed spec Result {
+117 silly cache add   raw: 'jasmine-core@~2.5.2',
+117 silly cache add   scope: null,
+117 silly cache add   name: 'jasmine-core',
+117 silly cache add   rawSpec: '~2.5.2',
+117 silly cache add   spec: '>=2.5.2 <2.6.0',
+117 silly cache add   type: 'range' }
+118 silly addNamed jasmine-core@>=2.5.2 <2.6.0
+119 verbose addNamed ">=2.5.2 <2.6.0" is a valid semver range for jasmine-core
+120 silly addNameRange { name: 'jasmine-core', range: '>=2.5.2 <2.6.0', hasData: false }
+121 silly mapToRegistry name jasmine-core
+122 silly mapToRegistry using default registry
+123 silly mapToRegistry registry https://registry.npmjs.org/
+124 silly mapToRegistry data Result {
+124 silly mapToRegistry   raw: 'jasmine-core',
+124 silly mapToRegistry   scope: null,
+124 silly mapToRegistry   name: 'jasmine-core',
+124 silly mapToRegistry   rawSpec: '',
+124 silly mapToRegistry   spec: 'latest',
+124 silly mapToRegistry   type: 'tag' }
+125 silly mapToRegistry uri https://registry.npmjs.org/jasmine-core
+126 verbose addNameRange registry:https://registry.npmjs.org/jasmine-core not in flight; fetching
+127 verbose request uri https://registry.npmjs.org/exit
+128 verbose request no auth needed
+129 info attempt registry request try #1 at 12:17:30 PM
+130 http request GET https://registry.npmjs.org/exit
+131 verbose request uri https://registry.npmjs.org/glob
+132 verbose request no auth needed
+133 info attempt registry request try #1 at 12:17:30 PM
+134 http request GET https://registry.npmjs.org/glob
+135 verbose request uri https://registry.npmjs.org/jasmine-core
+136 verbose request no auth needed
+137 info attempt registry request try #1 at 12:17:30 PM
+138 http request GET https://registry.npmjs.org/jasmine-core
+139 http 200 https://registry.npmjs.org/exit
+140 verbose headers { server: 'nginx/1.10.1',
+140 verbose headers   'content-type': 'application/json',
+140 verbose headers   'last-modified': 'Tue, 01 Nov 2016 17:21:50 GMT',
+140 verbose headers   etag: 'W/"5818cf2e-3622"',
+140 verbose headers   'content-encoding': 'gzip',
+140 verbose headers   'cache-control': 'max-age=300',
+140 verbose headers   'content-length': '2226',
+140 verbose headers   'accept-ranges': 'bytes',
+140 verbose headers   date: 'Wed, 23 Nov 2016 11:17:30 GMT',
+140 verbose headers   via: '1.1 varnish',
+140 verbose headers   age: '94',
+140 verbose headers   connection: 'keep-alive',
+140 verbose headers   'x-served-by': 'cache-lhr6322-LHR',
+140 verbose headers   'x-cache': 'HIT',
+140 verbose headers   'x-cache-hits': '5',
+140 verbose headers   'x-timer': 'S1479899850.784282,VS0,VE0',
+140 verbose headers   vary: 'Accept-Encoding' }
+141 silly get cb [ 200,
+141 silly get   { server: 'nginx/1.10.1',
+141 silly get     'content-type': 'application/json',
+141 silly get     'last-modified': 'Tue, 01 Nov 2016 17:21:50 GMT',
+141 silly get     etag: 'W/"5818cf2e-3622"',
+141 silly get     'content-encoding': 'gzip',
+141 silly get     'cache-control': 'max-age=300',
+141 silly get     'content-length': '2226',
+141 silly get     'accept-ranges': 'bytes',
+141 silly get     date: 'Wed, 23 Nov 2016 11:17:30 GMT',
+141 silly get     via: '1.1 varnish',
+141 silly get     age: '94',
+141 silly get     connection: 'keep-alive',
+141 silly get     'x-served-by': 'cache-lhr6322-LHR',
+141 silly get     'x-cache': 'HIT',
+141 silly get     'x-cache-hits': '5',
+141 silly get     'x-timer': 'S1479899850.784282,VS0,VE0',
+141 silly get     vary: 'Accept-Encoding' } ]
+142 verbose get saving exit to /home/michele.sbicego/.npm/registry.npmjs.org/exit/.cache.json
+143 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+144 silly addNameRange number 2 { name: 'exit', range: '>=0.1.2 <0.2.0', hasData: true }
+145 silly addNameRange versions [ 'exit', [ '0.1.0', '0.1.1', '0.1.2' ] ]
+146 silly addNamed exit@0.1.2
+147 verbose addNamed "0.1.2" is a plain semver version for exit
+148 silly mapToRegistry name exit
+149 silly mapToRegistry using default registry
+150 silly mapToRegistry registry https://registry.npmjs.org/
+151 silly mapToRegistry data Result {
+151 silly mapToRegistry   raw: 'exit',
+151 silly mapToRegistry   scope: null,
+151 silly mapToRegistry   name: 'exit',
+151 silly mapToRegistry   rawSpec: '',
+151 silly mapToRegistry   spec: 'latest',
+151 silly mapToRegistry   type: 'tag' }
+152 silly mapToRegistry uri https://registry.npmjs.org/exit
+153 verbose addRemoteTarball https://registry.npmjs.org/exit/-/exit-0.1.2.tgz not in flight; adding
+154 verbose addRemoteTarball [ 'https://registry.npmjs.org/exit/-/exit-0.1.2.tgz',
+154 verbose addRemoteTarball   '0632638f8d877cc82107d30a0fff1a17cba1cd0c' ]
+155 info retry fetch attempt 1 at 12:17:30 PM
+156 info attempt registry request try #1 at 12:17:30 PM
+157 http fetch GET https://registry.npmjs.org/exit/-/exit-0.1.2.tgz
+158 http fetch 200 https://registry.npmjs.org/exit/-/exit-0.1.2.tgz
+159 http 200 https://registry.npmjs.org/jasmine-core
+160 verbose headers { server: 'nginx/1.10.1',
+160 verbose headers   'content-type': 'application/json',
+160 verbose headers   'last-modified': 'Wed, 16 Nov 2016 13:59:17 GMT',
+160 verbose headers   etag: 'W/"582c6635-697e"',
+160 verbose headers   'content-encoding': 'gzip',
+160 verbose headers   'cache-control': 'max-age=300',
+160 verbose headers   'content-length': '4441',
+160 verbose headers   'accept-ranges': 'bytes',
+160 verbose headers   date: 'Wed, 23 Nov 2016 11:17:30 GMT',
+160 verbose headers   via: '1.1 varnish',
+160 verbose headers   age: '185',
+160 verbose headers   connection: 'keep-alive',
+160 verbose headers   'x-served-by': 'cache-lhr6342-LHR',
+160 verbose headers   'x-cache': 'HIT',
+160 verbose headers   'x-cache-hits': '4',
+160 verbose headers   'x-timer': 'S1479899850.885588,VS0,VE0',
+160 verbose headers   vary: 'Accept-Encoding' }
+161 silly get cb [ 200,
+161 silly get   { server: 'nginx/1.10.1',
+161 silly get     'content-type': 'application/json',
+161 silly get     'last-modified': 'Wed, 16 Nov 2016 13:59:17 GMT',
+161 silly get     etag: 'W/"582c6635-697e"',
+161 silly get     'content-encoding': 'gzip',
+161 silly get     'cache-control': 'max-age=300',
+161 silly get     'content-length': '4441',
+161 silly get     'accept-ranges': 'bytes',
+161 silly get     date: 'Wed, 23 Nov 2016 11:17:30 GMT',
+161 silly get     via: '1.1 varnish',
+161 silly get     age: '185',
+161 silly get     connection: 'keep-alive',
+161 silly get     'x-served-by': 'cache-lhr6342-LHR',
+161 silly get     'x-cache': 'HIT',
+161 silly get     'x-cache-hits': '4',
+161 silly get     'x-timer': 'S1479899850.885588,VS0,VE0',
+161 silly get     vary: 'Accept-Encoding' } ]
+162 verbose get saving jasmine-core to /home/michele.sbicego/.npm/registry.npmjs.org/jasmine-core/.cache.json
+163 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+164 silly fetchAndShaCheck shasum 0632638f8d877cc82107d30a0fff1a17cba1cd0c
+165 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/exit/-/exit-0.1.2.tgz not in flight; adding
+166 verbose addTmpTarball already have metadata; skipping unpack for exit@0.1.2
+167 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+168 silly addNameRange number 2 { name: 'jasmine-core', range: '>=2.5.2 <2.6.0', hasData: true }
+169 silly addNameRange versions [ 'jasmine-core',
+169 silly addNameRange   [ '2.0.0',
+169 silly addNameRange     '2.0.1',
+169 silly addNameRange     '2.0.4',
+169 silly addNameRange     '2.1.0',
+169 silly addNameRange     '2.1.1',
+169 silly addNameRange     '2.1.2',
+169 silly addNameRange     '2.1.3',
+169 silly addNameRange     '2.2.0',
+169 silly addNameRange     '2.3.0',
+169 silly addNameRange     '2.3.2',
+169 silly addNameRange     '2.3.3',
+169 silly addNameRange     '2.3.4',
+169 silly addNameRange     '2.4.0',
+169 silly addNameRange     '2.4.1',
+169 silly addNameRange     '2.5.0',
+169 silly addNameRange     '2.5.1',
+169 silly addNameRange     '2.5.2' ] ]
+170 silly addNamed jasmine-core@2.5.2
+171 verbose addNamed "2.5.2" is a plain semver version for jasmine-core
+172 silly mapToRegistry name jasmine-core
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry https://registry.npmjs.org/
+175 silly mapToRegistry data Result {
+175 silly mapToRegistry   raw: 'jasmine-core',
+175 silly mapToRegistry   scope: null,
+175 silly mapToRegistry   name: 'jasmine-core',
+175 silly mapToRegistry   rawSpec: '',
+175 silly mapToRegistry   spec: 'latest',
+175 silly mapToRegistry   type: 'tag' }
+176 silly mapToRegistry uri https://registry.npmjs.org/jasmine-core
+177 verbose addRemoteTarball https://registry.npmjs.org/jasmine-core/-/jasmine-core-2.5.2.tgz not in flight; adding
+178 verbose addRemoteTarball [ 'https://registry.npmjs.org/jasmine-core/-/jasmine-core-2.5.2.tgz',
+178 verbose addRemoteTarball   '6f61bd79061e27f43e6f9355e44b3c6cab6ff297' ]
+179 info retry fetch attempt 1 at 12:17:30 PM
+180 info attempt registry request try #1 at 12:17:30 PM
+181 http fetch GET https://registry.npmjs.org/jasmine-core/-/jasmine-core-2.5.2.tgz
+182 silly cache afterAdd exit@0.1.2
+183 verbose afterAdd /home/michele.sbicego/.npm/exit/0.1.2/package/package.json not in flight; writing
+184 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+185 verbose afterAdd /home/michele.sbicego/.npm/exit/0.1.2/package/package.json written
+186 http 200 https://registry.npmjs.org/glob
+187 verbose headers { server: 'nginx/1.10.1',
+187 verbose headers   'content-type': 'application/json',
+187 verbose headers   'last-modified': 'Sun, 20 Nov 2016 10:28:59 GMT',
+187 verbose headers   etag: 'W/"58317aeb-1f4f0"',
+187 verbose headers   'content-encoding': 'gzip',
+187 verbose headers   'cache-control': 'max-age=300',
+187 verbose headers   'content-length': '17726',
+187 verbose headers   'accept-ranges': 'bytes',
+187 verbose headers   date: 'Wed, 23 Nov 2016 11:17:30 GMT',
+187 verbose headers   via: '1.1 varnish',
+187 verbose headers   age: '92',
+187 verbose headers   connection: 'keep-alive',
+187 verbose headers   'x-served-by': 'cache-lhr6333-LHR',
+187 verbose headers   'x-cache': 'HIT',
+187 verbose headers   'x-cache-hits': '10',
+187 verbose headers   'x-timer': 'S1479899850.879149,VS0,VE0',
+187 verbose headers   vary: 'Accept-Encoding' }
+188 silly get cb [ 200,
+188 silly get   { server: 'nginx/1.10.1',
+188 silly get     'content-type': 'application/json',
+188 silly get     'last-modified': 'Sun, 20 Nov 2016 10:28:59 GMT',
+188 silly get     etag: 'W/"58317aeb-1f4f0"',
+188 silly get     'content-encoding': 'gzip',
+188 silly get     'cache-control': 'max-age=300',
+188 silly get     'content-length': '17726',
+188 silly get     'accept-ranges': 'bytes',
+188 silly get     date: 'Wed, 23 Nov 2016 11:17:30 GMT',
+188 silly get     via: '1.1 varnish',
+188 silly get     age: '92',
+188 silly get     connection: 'keep-alive',
+188 silly get     'x-served-by': 'cache-lhr6333-LHR',
+188 silly get     'x-cache': 'HIT',
+188 silly get     'x-cache-hits': '10',
+188 silly get     'x-timer': 'S1479899850.879149,VS0,VE0',
+188 silly get     vary: 'Accept-Encoding' } ]
+189 verbose get saving glob to /home/michele.sbicego/.npm/registry.npmjs.org/glob/.cache.json
+190 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+191 silly addNameRange number 2 { name: 'glob', range: '>=7.0.6 <8.0.0', hasData: true }
+192 silly addNameRange versions [ 'glob',
+192 silly addNameRange   [ '1.1.0',
+192 silly addNameRange     '2.0.9',
+192 silly addNameRange     '2.0.8',
+192 silly addNameRange     '2.0.7',
+192 silly addNameRange     '2.1.0',
+192 silly addNameRange     '3.0.0',
+192 silly addNameRange     '3.0.1',
+192 silly addNameRange     '3.1.0',
+192 silly addNameRange     '3.1.1',
+192 silly addNameRange     '3.1.2',
+192 silly addNameRange     '3.1.3',
+192 silly addNameRange     '3.1.4',
+192 silly addNameRange     '3.1.5',
+192 silly addNameRange     '3.1.6',
+192 silly addNameRange     '3.1.7',
+192 silly addNameRange     '3.1.9',
+192 silly addNameRange     '3.1.10',
+192 silly addNameRange     '3.1.11',
+192 silly addNameRange     '3.1.12',
+192 silly addNameRange     '3.1.13',
+192 silly addNameRange     '3.1.14',
+192 silly addNameRange     '3.1.15',
+192 silly addNameRange     '3.1.16',
+192 silly addNameRange     '3.1.17',
+192 silly addNameRange     '3.1.18',
+192 silly addNameRange     '3.1.19',
+192 silly addNameRange     '3.1.20',
+192 silly addNameRange     '3.1.21',
+192 silly addNameRange     '3.2.0',
+192 silly addNameRange     '3.2.1',
+192 silly addNameRange     '3.2.3',
+192 silly addNameRange     '3.2.4',
+192 silly addNameRange     '3.2.5',
+192 silly addNameRange     '3.2.6',
+192 silly addNameRange     '3.2.7',
+192 silly addNameRange     '3.2.8',
+192 silly addNameRange     '3.2.9',
+192 silly addNameRange     '3.2.10',
+192 silly addNameRange     '3.2.11',
+192 silly addNameRange     '4.0.0',
+192 silly addNameRange     '4.0.1',
+192 silly addNameRange     '4.0.2',
+192 silly addNameRange     '4.0.3',
+192 silly addNameRange     '4.0.4',
+192 silly addNameRange     '4.0.5',
+192 silly addNameRange     '4.0.6',
+192 silly addNameRange     '4.1.2-beta',
+192 silly addNameRange     '4.1.2',
+192 silly addNameRange     '4.1.3',
+192 silly addNameRange     '4.1.4',
+192 silly addNameRange     '4.1.5',
+192 silly addNameRange     '4.1.6',
+192 silly addNameRange     '4.2.0',
+192 silly addNameRange     '4.2.1',
+192 silly addNameRange     '4.2.2',
+192 silly addNameRange     '4.3.0',
+192 silly addNameRange     '4.3.1',
+192 silly addNameRange     '4.3.2',
+192 silly addNameRange     '4.3.3',
+192 silly addNameRange     '4.3.4',
+192 silly addNameRange     '4.3.5',
+192 silly addNameRange     '4.4.0',
+192 silly addNameRange     '4.4.2',
+192 silly addNameRange     '4.5.0',
+192 silly addNameRange     '5.0.0',
+192 silly addNameRange     '4.5.1',
+192 silly addNameRange     '5.0.1',
+192 silly addNameRange     '4.5.2',
+192 silly addNameRange     '5.0.2',
+192 silly addNameRange     '4.5.3',
+192 silly addNameRange     '5.0.3',
+192 silly addNameRange     '5.0.4',
+192 silly addNameRange     '5.0.5',
+192 silly addNameRange     '5.0.6',
+192 silly addNameRange     '5.0.7',
+192 silly addNameRange     '5.0.9',
+192 silly addNameRange     '5.0.10',
+192 silly addNameRange     '5.0.11',
+192 silly addNameRange     '5.0.12',
+192 silly addNameRange     '5.0.13',
+192 silly addNameRange     '5.0.14',
+192 silly addNameRange     '5.0.15',
+192 silly addNameRange     '6.0.1',
+192 silly addNameRange     '6.0.2',
+192 silly addNameRange     '6.0.3',
+192 silly addNameRange     '6.0.4',
+192 silly addNameRange     '7.0.0',
+192 silly addNameRange     '7.0.1',
+192 silly addNameRange     '7.0.3',
+192 silly addNameRange     '7.0.4',
+192 silly addNameRange     '7.0.5',
+192 silly addNameRange     '7.0.6',
+192 silly addNameRange     '7.1.0',
+192 silly addNameRange     '7.1.1' ] ]
+193 silly addNamed glob@7.1.1
+194 verbose addNamed "7.1.1" is a plain semver version for glob
+195 http fetch 200 https://registry.npmjs.org/jasmine-core/-/jasmine-core-2.5.2.tgz
+196 silly mapToRegistry name glob
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry data Result {
+199 silly mapToRegistry   raw: 'glob',
+199 silly mapToRegistry   scope: null,
+199 silly mapToRegistry   name: 'glob',
+199 silly mapToRegistry   rawSpec: '',
+199 silly mapToRegistry   spec: 'latest',
+199 silly mapToRegistry   type: 'tag' }
+200 silly mapToRegistry uri https://registry.npmjs.org/glob
+201 verbose addRemoteTarball https://registry.npmjs.org/glob/-/glob-7.1.1.tgz not in flight; adding
+202 verbose addRemoteTarball [ 'https://registry.npmjs.org/glob/-/glob-7.1.1.tgz',
+202 verbose addRemoteTarball   '805211df04faaf1c63a3600306cdf5ade50b2ec8' ]
+203 info retry fetch attempt 1 at 12:17:31 PM
+204 info attempt registry request try #1 at 12:17:31 PM
+205 http fetch GET https://registry.npmjs.org/glob/-/glob-7.1.1.tgz
+206 http fetch 200 https://registry.npmjs.org/glob/-/glob-7.1.1.tgz
+207 silly fetchAndShaCheck shasum 805211df04faaf1c63a3600306cdf5ade50b2ec8
+208 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/glob/-/glob-7.1.1.tgz not in flight; adding
+209 verbose addTmpTarball already have metadata; skipping unpack for glob@7.1.1
+210 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+211 silly cache afterAdd glob@7.1.1
+212 verbose afterAdd /home/michele.sbicego/.npm/glob/7.1.1/package/package.json not in flight; writing
+213 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+214 verbose afterAdd /home/michele.sbicego/.npm/glob/7.1.1/package/package.json written
+215 silly fetchAndShaCheck shasum 6f61bd79061e27f43e6f9355e44b3c6cab6ff297
+216 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/jasmine-core/-/jasmine-core-2.5.2.tgz not in flight; adding
+217 verbose addTmpTarball already have metadata; skipping unpack for jasmine-core@2.5.2
+218 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+219 silly cache afterAdd jasmine-core@2.5.2
+220 verbose afterAdd /home/michele.sbicego/.npm/jasmine-core/2.5.2/package/package.json not in flight; writing
+221 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+222 verbose afterAdd /home/michele.sbicego/.npm/jasmine-core/2.5.2/package/package.json written
+223 silly install resolved [ { name: 'exit',
+223 silly install resolved     description: 'A replacement for process.exit that ensures stdio are fully drained before exiting.',
+223 silly install resolved     version: '0.1.2',
+223 silly install resolved     homepage: 'https://github.com/cowboy/node-exit',
+223 silly install resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+223 silly install resolved     repository: { type: 'git', url: 'git://github.com/cowboy/node-exit.git' },
+223 silly install resolved     bugs: { url: 'https://github.com/cowboy/node-exit/issues' },
+223 silly install resolved     licenses: [ [Object] ],
+223 silly install resolved     main: 'lib/exit',
+223 silly install resolved     engines: { node: '>= 0.8.0' },
+223 silly install resolved     scripts: { test: 'grunt nodeunit' },
+223 silly install resolved     devDependencies:
+223 silly install resolved      { 'grunt-contrib-jshint': '~0.6.4',
+223 silly install resolved        'grunt-contrib-nodeunit': '~0.2.0',
+223 silly install resolved        'grunt-contrib-watch': '~0.5.3',
+223 silly install resolved        grunt: '~0.4.1',
+223 silly install resolved        which: '~1.0.5' },
+223 silly install resolved     keywords:
+223 silly install resolved      [ 'exit',
+223 silly install resolved        'process',
+223 silly install resolved        'stdio',
+223 silly install resolved        'stdout',
+223 silly install resolved        'stderr',
+223 silly install resolved        'drain',
+223 silly install resolved        'flush',
+223 silly install resolved        '3584' ],
+223 silly install resolved     readme: '# exit [![Build Status](https://secure.travis-ci.org/cowboy/node-exit.png?branch=master)](http://travis-ci.org/cowboy/node-exit)\n\nA replacement for process.exit that ensures stdio are fully drained before exiting.\n\nTo make a long story short, if `process.exit` is called on Windows, script output is often truncated when pipe-redirecting `stdout` or `stderr`. This module attempts to work around this issue by waiting until those streams have been completely drained before actually calling `process.exit`.\n\nSee [Node.js issue #3584](https://github.com/joyent/node/issues/3584) for further reference.\n\nTested in OS X 10.8, Windows 7 on Node.js 0.8.25 and 0.10.18.\n\nBased on some code by [@vladikoff](https://github.com/vladikoff).\n\n## Getting Started\nInstall the module with: `npm install exit`\n\n```javascript\nvar exit = require(\'exit\');\n\n// These lines should appear in the output, EVEN ON WINDOWS.\nconsole.log("omg");\nconsole.error("yay");\n\n// process.exit(5);\nexit(5);\n\n// These lines shouldn\'t appear in the output.\nconsole.log("wtf");\nconsole.error("bro");\n```\n\n## Don\'t believe me? Try it for yourself.\n\nIn Windows, clone the repo and cd to the `test\\fixtures` directory. The only difference between [log.js](test/fixtures/log.js) and [log-broken.js](test/fixtures/log-broken.js) is that the former uses `exit` while the latter calls `process.exit` directly.\n\nThis test was done using cmd.exe, but you can see the same results using `| grep "std"` in either PowerShell or git-bash.\n\n```\nC:\\node-exit\\test\\fixtures>node log.js 0 10 stdout stderr 2>&1 | find "std"\nstdout 0\nstderr 0\nstdout 1\nstderr 1\nstdout 2\nstderr 2\nstdout 3\nstderr 3\nstdout 4\nstderr 4\nstdout 5\nstderr 5\nstdout 6\nstderr 6\nstdout 7\nstderr 7\nstdout 8\nstderr 8\nstdout 9\nstderr 9\n\nC:\\node-exit\\test\\fixtures>node log-broken.js 0 10 stdout stderr 2>&1 | find "std"\n\nC:\\node-exit\\test\\fixtures>\n```\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n2013-11-26 - v0.1.2 - Fixed a bug with hanging processes.  \n2013-09-26 - v0.1.1 - Fixed some bugs. It seems to actually work now!  \n2013-09-20 - v0.1.0 - Initial release.\n\n## License\nCopyright (c) 2013 "Cowboy" Ben Alman  \nLicensed under the MIT license.\n',
+223 silly install resolved     readmeFilename: 'README.md',
+223 silly install resolved     _id: 'exit@0.1.2',
+223 silly install resolved     dist:
+223 silly install resolved      { shasum: '0632638f8d877cc82107d30a0fff1a17cba1cd0c',
+223 silly install resolved        tarball: 'https://registry.npmjs.org/exit/-/exit-0.1.2.tgz' },
+223 silly install resolved     _from: 'exit@>=0.1.2 <0.2.0',
+223 silly install resolved     _npmVersion: '1.3.11',
+223 silly install resolved     _npmUser: { name: 'cowboy', email: 'cowboy@rj3.net' },
+223 silly install resolved     maintainers: [ [Object] ],
+223 silly install resolved     directories: {},
+223 silly install resolved     _shasum: '0632638f8d877cc82107d30a0fff1a17cba1cd0c',
+223 silly install resolved     _resolved: 'https://registry.npmjs.org/exit/-/exit-0.1.2.tgz' },
+223 silly install resolved   { author:
+223 silly install resolved      { name: 'Isaac Z. Schlueter',
+223 silly install resolved        email: 'i@izs.me',
+223 silly install resolved        url: 'http://blog.izs.me/' },
+223 silly install resolved     name: 'glob',
+223 silly install resolved     description: 'a little globber',
+223 silly install resolved     version: '7.1.1',
+223 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+223 silly install resolved     main: 'glob.js',
+223 silly install resolved     files: [ 'glob.js', 'sync.js', 'common.js' ],
+223 silly install resolved     engines: { node: '*' },
+223 silly install resolved     dependencies:
+223 silly install resolved      { 'fs.realpath': '^1.0.0',
+223 silly install resolved        inflight: '^1.0.4',
+223 silly install resolved        inherits: '2',
+223 silly install resolved        minimatch: '^3.0.2',
+223 silly install resolved        once: '^1.3.0',
+223 silly install resolved        'path-is-absolute': '^1.0.0' },
+223 silly install resolved     devDependencies: { mkdirp: '0', rimraf: '^2.2.8', tap: '^7.1.2', tick: '0.0.6' },
+223 silly install resolved     scripts:
+223 silly install resolved      { prepublish: 'npm run benchclean',
+223 silly install resolved        profclean: 'rm -f v8.log profile.txt',
+223 silly install resolved        test: 'tap test/*.js --cov',
+223 silly install resolved        'test-regen': 'npm run profclean && TEST_REGEN=1 node test/00-setup.js',
+223 silly install resolved        bench: 'bash benchmark.sh',
+223 silly install resolved        prof: 'bash prof.sh && cat profile.txt',
+223 silly install resolved        benchclean: 'node benchclean.js' },
+223 silly install resolved     license: 'ISC',
+223 silly install resolved     gitHead: 'bc8d43b736a98a9e289fdfceee9266cff35e5742',
+223 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+223 silly install resolved     homepage: 'https://github.com/isaacs/node-glob#readme',
+223 silly install resolved     _id: 'glob@7.1.1',
+223 silly install resolved     _shasum: '805211df04faaf1c63a3600306cdf5ade50b2ec8',
+223 silly install resolved     _from: 'glob@>=7.0.6 <8.0.0',
+223 silly install resolved     _npmVersion: '3.10.7',
+223 silly install resolved     _nodeVersion: '6.5.0',
+223 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+223 silly install resolved     dist:
+223 silly install resolved      { shasum: '805211df04faaf1c63a3600306cdf5ade50b2ec8',
+223 silly install resolved        tarball: 'https://registry.npmjs.org/glob/-/glob-7.1.1.tgz' },
+223 silly install resolved     maintainers: [ [Object] ],
+223 silly install resolved     _npmOperationalInternal:
+223 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+223 silly install resolved        tmp: 'tmp/glob-7.1.1.tgz_1475876991562_0.924720095237717' },
+223 silly install resolved     directories: {},
+223 silly install resolved     _resolved: 'https://registry.npmjs.org/glob/-/glob-7.1.1.tgz' },
+223 silly install resolved   { name: 'jasmine-core',
+223 silly install resolved     license: 'MIT',
+223 silly install resolved     version: '2.5.2',
+223 silly install resolved     repository:
+223 silly install resolved      { type: 'git',
+223 silly install resolved        url: 'git+https://github.com/jasmine/jasmine.git' },
+223 silly install resolved     keywords: [ 'test', 'jasmine', 'tdd', 'bdd' ],
+223 silly install resolved     scripts: { test: 'grunt jshint execSpecsInNode' },
+223 silly install resolved     description: 'Official packaging of Jasmine\'s core files for use by Node.js projects.',
+223 silly install resolved     homepage: 'http://jasmine.github.io',
+223 silly install resolved     main: './lib/jasmine-core.js',
+223 silly install resolved     devDependencies:
+223 silly install resolved      { glob: '~7.0.5',
+223 silly install resolved        grunt: '^1.0.1',
+223 silly install resolved        'grunt-cli': '^1.2.0',
+223 silly install resolved        'grunt-contrib-compass': '^1.1.1',
+223 silly install resolved        'grunt-contrib-compress': '^1.3.0',
+223 silly install resolved        'grunt-contrib-concat': '^1.0.1',
+223 silly install resolved        'grunt-contrib-jshint': '^1.0.0',
+223 silly install resolved        jasmine: '^2.4.0',
+223 silly install resolved        'load-grunt-tasks': '^0.4.0',
+223 silly install resolved        shelljs: '^0.7.0',
+223 silly install resolved        temp: '~0.8.1' },
+223 silly install resolved     gitHead: '6816bc4252fe40ea2cf6a16b4aac7ddce6922095',
+223 silly install resolved     bugs: { url: 'https://github.com/jasmine/jasmine/issues' },
+223 silly install resolved     _id: 'jasmine-core@2.5.2',
+223 silly install resolved     _shasum: '6f61bd79061e27f43e6f9355e44b3c6cab6ff297',
+223 silly install resolved     _from: 'jasmine-core@>=2.5.2 <2.6.0',
+223 silly install resolved     _npmVersion: '2.12.1',
+223 silly install resolved     _nodeVersion: '0.12.7',
+223 silly install resolved     _npmUser: { name: 'slackersoft', email: 'gregg@slackersoft.net' },
+223 silly install resolved     maintainers: [ [Object], [Object] ],
+223 silly install resolved     dist:
+223 silly install resolved      { shasum: '6f61bd79061e27f43e6f9355e44b3c6cab6ff297',
+223 silly install resolved        tarball: 'https://registry.npmjs.org/jasmine-core/-/jasmine-core-2.5.2.tgz' },
+223 silly install resolved     _npmOperationalInternal:
+223 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+223 silly install resolved        tmp: 'tmp/jasmine-core-2.5.2.tgz_1474071878974_0.8996635694056749' },
+223 silly install resolved     directories: {},
+223 silly install resolved     _resolved: 'https://registry.npmjs.org/jasmine-core/-/jasmine-core-2.5.2.tgz' } ]
+224 info install exit@0.1.2 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+225 info install glob@7.1.1 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+226 info install jasmine-core@2.5.2 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+227 info installOne exit@0.1.2
+228 verbose installOne of exit to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine not in flight; installing
+229 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+230 info installOne glob@7.1.1
+231 verbose installOne of glob to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine not in flight; installing
+232 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+233 info installOne jasmine-core@2.5.2
+234 verbose installOne of jasmine-core to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine not in flight; installing
+235 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+236 verbose lock using /home/michele.sbicego/.npm/_locks/exit-a9b88e8f2f563ccd.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit
+237 silly install write writing exit 0.1.2 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit
+238 verbose lock using /home/michele.sbicego/.npm/_locks/glob-2b5297f61d7e4b32.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+239 silly install write writing glob 7.1.1 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+240 verbose unbuild node_modules/jasmine/node_modules/exit
+241 verbose lock using /home/michele.sbicego/.npm/_locks/jasmine-core-59923bb19ab9c3d3.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core
+242 silly install write writing jasmine-core 2.5.2 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core
+243 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+244 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit
+245 verbose tar unpack /home/michele.sbicego/.npm/exit/0.1.2/package.tgz
+246 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit
+247 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit is being purged
+248 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit
+249 silly gunzTarPerm modes [ '755', '644' ]
+250 verbose unbuild node_modules/jasmine/node_modules/glob
+251 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+252 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+253 verbose unbuild node_modules/jasmine/node_modules/jasmine-core
+254 verbose tar unpack /home/michele.sbicego/.npm/glob/7.1.1/package.tgz
+255 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+256 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob is being purged
+257 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+258 silly gunzTarPerm modes [ '755', '644' ]
+259 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+260 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core
+261 verbose tar unpack /home/michele.sbicego/.npm/jasmine-core/2.5.2/package.tgz
+262 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core
+263 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core is being purged
+264 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core
+265 silly gunzTarPerm modes [ '755', '644' ]
+266 silly gunzTarPerm extractEntry package.json
+267 silly gunzTarPerm extractEntry package.json
+268 silly gunzTarPerm extractEntry .npmignore
+269 silly gunzTarPerm extractEntry README.md
+270 silly gunzTarPerm extractEntry package.json
+271 silly gunzTarPerm extractEntry .npmignore
+272 silly gunzTarPerm extractEntry README.md
+273 silly gunzTarPerm extractEntry Gruntfile.js
+274 silly gunzTarPerm extractEntry .jshintrc
+275 silly gunzTarPerm extractEntry README.md
+276 silly gunzTarPerm extractEntry LICENSE
+277 silly gunzTarPerm extractEntry common.js
+278 silly gunzTarPerm extractEntry glob.js
+279 silly gunzTarPerm extractEntry sync.js
+280 silly gunzTarPerm extractEntry changelog.md
+281 silly gunzTarPerm extractEntry .github/CONTRIBUTING.md
+282 silly gunzTarPerm extractEntry .github/ISSUE_TEMPLATE.md
+283 silly gunzTarPerm extractEntry .travis.yml
+284 silly gunzTarPerm extractEntry LICENSE-MIT
+285 silly gunzTarPerm extractEntry .codeclimate.yml
+286 silly gunzTarPerm extractEntry lib/exit.js
+287 silly gunzTarPerm extractEntry test/exit_test.js
+288 silly gunzTarPerm extractEntry test/fixtures/log.js
+289 silly gunzTarPerm extractEntry MANIFEST.in
+290 silly gunzTarPerm extractEntry MIT.LICENSE
+291 silly gunzTarPerm extractEntry .editorconfig
+292 silly gunzTarPerm extractEntry RELEASE.md
+293 silly gunzTarPerm extractEntry test/fixtures/log-broken.js
+294 silly gunzTarPerm extractEntry test/fixtures/10-stdout.txt
+295 silly gunzTarPerm extractEntry bower.json
+296 silly gunzTarPerm extractEntry images/jasmine-horizontal.png
+297 silly gunzTarPerm extractEntry test/fixtures/100-stderr.txt
+298 silly gunzTarPerm extractEntry test/fixtures/100-stdout-stderr.txt
+299 silly gunzTarPerm extractEntry images/jasmine-horizontal.svg
+300 silly gunzTarPerm extractEntry images/jasmine_favicon.png
+301 verbose write writing to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/package.json
+302 silly gunzTarPerm extractEntry jasmine_core.egg-info/PKG-INFO
+303 silly gunzTarPerm extractEntry jasmine_core.egg-info/SOURCES.txt
+304 info preinstall glob@7.1.1
+305 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/package.json
+306 silly gunzTarPerm extractEntry jasmine_core.egg-info/dependency_links.txt
+307 silly gunzTarPerm extractEntry jasmine_core.egg-info/requires.txt
+308 silly gunzTarPerm extractEntry test/fixtures/100-stdout.txt
+309 silly gunzTarPerm extractEntry test/fixtures/10-stdout-stderr.txt
+310 silly prepareForInstallMany adding fs.realpath@^1.0.0 from glob dependencies
+311 silly prepareForInstallMany adding inflight@^1.0.4 from glob dependencies
+312 silly prepareForInstallMany adding inherits@2 from glob dependencies
+313 silly prepareForInstallMany adding minimatch@^3.0.2 from glob dependencies
+314 silly prepareForInstallMany adding once@^1.3.0 from glob dependencies
+315 silly prepareForInstallMany adding path-is-absolute@^1.0.0 from glob dependencies
+316 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/package.json
+317 silly gunzTarPerm extractEntry jasmine_core.egg-info/top_level.txt
+318 silly gunzTarPerm extractEntry lib/jasmine-core.js
+319 silly cache add args [ 'fs.realpath@^1.0.0', null ]
+320 verbose cache add spec fs.realpath@^1.0.0
+321 silly cache add args [ 'inflight@^1.0.4', null ]
+322 verbose cache add spec inflight@^1.0.4
+323 silly cache add parsed spec Result {
+323 silly cache add   raw: 'fs.realpath@^1.0.0',
+323 silly cache add   scope: null,
+323 silly cache add   name: 'fs.realpath',
+323 silly cache add   rawSpec: '^1.0.0',
+323 silly cache add   spec: '>=1.0.0 <2.0.0',
+323 silly cache add   type: 'range' }
+324 silly addNamed fs.realpath@>=1.0.0 <2.0.0
+325 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for fs.realpath
+326 silly addNameRange { name: 'fs.realpath', range: '>=1.0.0 <2.0.0', hasData: false }
+327 silly mapToRegistry name fs.realpath
+328 silly mapToRegistry using default registry
+329 silly mapToRegistry registry https://registry.npmjs.org/
+330 silly mapToRegistry data Result {
+330 silly mapToRegistry   raw: 'fs.realpath',
+330 silly mapToRegistry   scope: null,
+330 silly mapToRegistry   name: 'fs.realpath',
+330 silly mapToRegistry   rawSpec: '',
+330 silly mapToRegistry   spec: 'latest',
+330 silly mapToRegistry   type: 'tag' }
+331 silly mapToRegistry uri https://registry.npmjs.org/fs.realpath
+332 verbose addNameRange registry:https://registry.npmjs.org/fs.realpath not in flight; fetching
+333 silly cache add parsed spec Result {
+333 silly cache add   raw: 'inflight@^1.0.4',
+333 silly cache add   scope: null,
+333 silly cache add   name: 'inflight',
+333 silly cache add   rawSpec: '^1.0.4',
+333 silly cache add   spec: '>=1.0.4 <2.0.0',
+333 silly cache add   type: 'range' }
+334 silly addNamed inflight@>=1.0.4 <2.0.0
+335 verbose addNamed ">=1.0.4 <2.0.0" is a valid semver range for inflight
+336 silly addNameRange { name: 'inflight', range: '>=1.0.4 <2.0.0', hasData: false }
+337 silly mapToRegistry name inflight
+338 silly mapToRegistry using default registry
+339 silly mapToRegistry registry https://registry.npmjs.org/
+340 silly mapToRegistry data Result {
+340 silly mapToRegistry   raw: 'inflight',
+340 silly mapToRegistry   scope: null,
+340 silly mapToRegistry   name: 'inflight',
+340 silly mapToRegistry   rawSpec: '',
+340 silly mapToRegistry   spec: 'latest',
+340 silly mapToRegistry   type: 'tag' }
+341 silly mapToRegistry uri https://registry.npmjs.org/inflight
+342 verbose addNameRange registry:https://registry.npmjs.org/inflight not in flight; fetching
+343 silly cache add args [ 'inherits@2', null ]
+344 verbose cache add spec inherits@2
+345 silly cache add parsed spec Result {
+345 silly cache add   raw: 'inherits@2',
+345 silly cache add   scope: null,
+345 silly cache add   name: 'inherits',
+345 silly cache add   rawSpec: '2',
+345 silly cache add   spec: '>=2.0.0 <3.0.0',
+345 silly cache add   type: 'range' }
+346 silly addNamed inherits@>=2.0.0 <3.0.0
+347 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for inherits
+348 silly addNameRange { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: false }
+349 silly mapToRegistry name inherits
+350 silly mapToRegistry using default registry
+351 silly mapToRegistry registry https://registry.npmjs.org/
+352 silly mapToRegistry data Result {
+352 silly mapToRegistry   raw: 'inherits',
+352 silly mapToRegistry   scope: null,
+352 silly mapToRegistry   name: 'inherits',
+352 silly mapToRegistry   rawSpec: '',
+352 silly mapToRegistry   spec: 'latest',
+352 silly mapToRegistry   type: 'tag' }
+353 silly mapToRegistry uri https://registry.npmjs.org/inherits
+354 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+355 silly cache add args [ 'minimatch@^3.0.2', null ]
+356 verbose cache add spec minimatch@^3.0.2
+357 silly cache add parsed spec Result {
+357 silly cache add   raw: 'minimatch@^3.0.2',
+357 silly cache add   scope: null,
+357 silly cache add   name: 'minimatch',
+357 silly cache add   rawSpec: '^3.0.2',
+357 silly cache add   spec: '>=3.0.2 <4.0.0',
+357 silly cache add   type: 'range' }
+358 silly addNamed minimatch@>=3.0.2 <4.0.0
+359 verbose addNamed ">=3.0.2 <4.0.0" is a valid semver range for minimatch
+360 silly addNameRange { name: 'minimatch', range: '>=3.0.2 <4.0.0', hasData: false }
+361 silly mapToRegistry name minimatch
+362 silly mapToRegistry using default registry
+363 silly mapToRegistry registry https://registry.npmjs.org/
+364 silly mapToRegistry data Result {
+364 silly mapToRegistry   raw: 'minimatch',
+364 silly mapToRegistry   scope: null,
+364 silly mapToRegistry   name: 'minimatch',
+364 silly mapToRegistry   rawSpec: '',
+364 silly mapToRegistry   spec: 'latest',
+364 silly mapToRegistry   type: 'tag' }
+365 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+366 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+367 silly cache add args [ 'once@^1.3.0', null ]
+368 verbose cache add spec once@^1.3.0
+369 silly cache add parsed spec Result {
+369 silly cache add   raw: 'once@^1.3.0',
+369 silly cache add   scope: null,
+369 silly cache add   name: 'once',
+369 silly cache add   rawSpec: '^1.3.0',
+369 silly cache add   spec: '>=1.3.0 <2.0.0',
+369 silly cache add   type: 'range' }
+370 silly addNamed once@>=1.3.0 <2.0.0
+371 verbose addNamed ">=1.3.0 <2.0.0" is a valid semver range for once
+372 silly addNameRange { name: 'once', range: '>=1.3.0 <2.0.0', hasData: false }
+373 silly mapToRegistry name once
+374 silly mapToRegistry using default registry
+375 silly mapToRegistry registry https://registry.npmjs.org/
+376 silly mapToRegistry data Result {
+376 silly mapToRegistry   raw: 'once',
+376 silly mapToRegistry   scope: null,
+376 silly mapToRegistry   name: 'once',
+376 silly mapToRegistry   rawSpec: '',
+376 silly mapToRegistry   spec: 'latest',
+376 silly mapToRegistry   type: 'tag' }
+377 silly mapToRegistry uri https://registry.npmjs.org/once
+378 verbose addNameRange registry:https://registry.npmjs.org/once not in flight; fetching
+379 silly cache add args [ 'path-is-absolute@^1.0.0', null ]
+380 verbose cache add spec path-is-absolute@^1.0.0
+381 silly cache add parsed spec Result {
+381 silly cache add   raw: 'path-is-absolute@^1.0.0',
+381 silly cache add   scope: null,
+381 silly cache add   name: 'path-is-absolute',
+381 silly cache add   rawSpec: '^1.0.0',
+381 silly cache add   spec: '>=1.0.0 <2.0.0',
+381 silly cache add   type: 'range' }
+382 silly addNamed path-is-absolute@>=1.0.0 <2.0.0
+383 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for path-is-absolute
+384 silly addNameRange { name: 'path-is-absolute',
+384 silly addNameRange   range: '>=1.0.0 <2.0.0',
+384 silly addNameRange   hasData: false }
+385 silly mapToRegistry name path-is-absolute
+386 silly mapToRegistry using default registry
+387 silly mapToRegistry registry https://registry.npmjs.org/
+388 silly mapToRegistry data Result {
+388 silly mapToRegistry   raw: 'path-is-absolute',
+388 silly mapToRegistry   scope: null,
+388 silly mapToRegistry   name: 'path-is-absolute',
+388 silly mapToRegistry   rawSpec: '',
+388 silly mapToRegistry   spec: 'latest',
+388 silly mapToRegistry   type: 'tag' }
+389 silly mapToRegistry uri https://registry.npmjs.org/path-is-absolute
+390 verbose addNameRange registry:https://registry.npmjs.org/path-is-absolute not in flight; fetching
+391 silly gunzTarPerm extractEntry test/fixtures/1000-stdout-stderr.txt
+392 silly gunzTarPerm extractEntry test/fixtures/1000-stdout.txt
+393 verbose request uri https://registry.npmjs.org/fs.realpath
+394 verbose request no auth needed
+395 info attempt registry request try #1 at 12:17:31 PM
+396 http request GET https://registry.npmjs.org/fs.realpath
+397 verbose request uri https://registry.npmjs.org/inflight
+398 verbose request no auth needed
+399 info attempt registry request try #1 at 12:17:31 PM
+400 http request GET https://registry.npmjs.org/inflight
+401 verbose request uri https://registry.npmjs.org/inherits
+402 verbose request no auth needed
+403 info attempt registry request try #1 at 12:17:31 PM
+404 http request GET https://registry.npmjs.org/inherits
+405 verbose request uri https://registry.npmjs.org/minimatch
+406 verbose request no auth needed
+407 info attempt registry request try #1 at 12:17:31 PM
+408 http request GET https://registry.npmjs.org/minimatch
+409 verbose request uri https://registry.npmjs.org/once
+410 verbose request no auth needed
+411 info attempt registry request try #1 at 12:17:31 PM
+412 http request GET https://registry.npmjs.org/once
+413 verbose request uri https://registry.npmjs.org/path-is-absolute
+414 verbose request no auth needed
+415 info attempt registry request try #1 at 12:17:31 PM
+416 http request GET https://registry.npmjs.org/path-is-absolute
+417 silly gunzTarPerm extractEntry lib/console/console.js
+418 silly gunzTarPerm extractEntry lib/jasmine-core/boot.js
+419 silly gunzTarPerm extractEntry test/fixtures/create-files.sh
+420 silly gunzTarPerm extractEntry test/fixtures/10-stderr.txt
+421 silly gunzTarPerm extractEntry lib/jasmine-core/jasmine-html.js
+422 silly gunzTarPerm extractEntry lib/jasmine-core/jasmine.js
+423 silly gunzTarPerm extractEntry test/fixtures/1000-stderr.txt
+424 silly gunzTarPerm extractEntry lib/jasmine-core/json2.js
+425 silly gunzTarPerm extractEntry lib/jasmine-core/node_boot.js
+426 silly gunzTarPerm extractEntry lib/jasmine-core/example/node_example/lib/jasmine_examples/Player.js
+427 silly gunzTarPerm extractEntry lib/jasmine-core/example/node_example/lib/jasmine_examples/Song.js
+428 silly gunzTarPerm extractEntry lib/jasmine-core/example/node_example/spec/helpers/jasmine_examples/SpecHelper.js
+429 silly gunzTarPerm extractEntry lib/jasmine-core/example/node_example/spec/jasmine_examples/PlayerSpec.js
+430 silly gunzTarPerm extractEntry lib/jasmine-core/example/spec/PlayerSpec.js
+431 silly gunzTarPerm extractEntry lib/jasmine-core/example/spec/SpecHelper.js
+432 http 200 https://registry.npmjs.org/inherits
+433 verbose headers { server: 'nginx/1.10.1',
+433 verbose headers   'content-type': 'application/json',
+433 verbose headers   'last-modified': 'Tue, 01 Nov 2016 17:30:38 GMT',
+433 verbose headers   etag: 'W/"5818d13e-2219"',
+433 verbose headers   'content-encoding': 'gzip',
+433 verbose headers   'cache-control': 'max-age=300',
+433 verbose headers   'content-length': '2458',
+433 verbose headers   'accept-ranges': 'bytes',
+433 verbose headers   date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+433 verbose headers   via: '1.1 varnish',
+433 verbose headers   age: '236',
+433 verbose headers   connection: 'keep-alive',
+433 verbose headers   'x-served-by': 'cache-lhr6342-LHR',
+433 verbose headers   'x-cache': 'HIT',
+433 verbose headers   'x-cache-hits': '43',
+433 verbose headers   'x-timer': 'S1479899851.269506,VS0,VE0',
+433 verbose headers   vary: 'Accept-Encoding' }
+434 silly get cb [ 200,
+434 silly get   { server: 'nginx/1.10.1',
+434 silly get     'content-type': 'application/json',
+434 silly get     'last-modified': 'Tue, 01 Nov 2016 17:30:38 GMT',
+434 silly get     etag: 'W/"5818d13e-2219"',
+434 silly get     'content-encoding': 'gzip',
+434 silly get     'cache-control': 'max-age=300',
+434 silly get     'content-length': '2458',
+434 silly get     'accept-ranges': 'bytes',
+434 silly get     date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+434 silly get     via: '1.1 varnish',
+434 silly get     age: '236',
+434 silly get     connection: 'keep-alive',
+434 silly get     'x-served-by': 'cache-lhr6342-LHR',
+434 silly get     'x-cache': 'HIT',
+434 silly get     'x-cache-hits': '43',
+434 silly get     'x-timer': 'S1479899851.269506,VS0,VE0',
+434 silly get     vary: 'Accept-Encoding' } ]
+435 verbose get saving inherits to /home/michele.sbicego/.npm/registry.npmjs.org/inherits/.cache.json
+436 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+437 http 200 https://registry.npmjs.org/inflight
+438 verbose headers { server: 'nginx/1.10.1',
+438 verbose headers   'content-type': 'application/json',
+438 verbose headers   'last-modified': 'Tue, 01 Nov 2016 17:30:25 GMT',
+438 verbose headers   etag: 'W/"5818d131-25a6"',
+438 verbose headers   'content-encoding': 'gzip',
+438 verbose headers   'cache-control': 'max-age=300',
+438 verbose headers   'content-length': '1994',
+438 verbose headers   'accept-ranges': 'bytes',
+438 verbose headers   date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+438 verbose headers   via: '1.1 varnish',
+438 verbose headers   age: '57',
+438 verbose headers   connection: 'keep-alive',
+438 verbose headers   'x-served-by': 'cache-lhr6322-LHR',
+438 verbose headers   'x-cache': 'HIT',
+438 verbose headers   'x-cache-hits': '12',
+438 verbose headers   'x-timer': 'S1479899851.269525,VS0,VE0',
+438 verbose headers   vary: 'Accept-Encoding' }
+439 silly get cb [ 200,
+439 silly get   { server: 'nginx/1.10.1',
+439 silly get     'content-type': 'application/json',
+439 silly get     'last-modified': 'Tue, 01 Nov 2016 17:30:25 GMT',
+439 silly get     etag: 'W/"5818d131-25a6"',
+439 silly get     'content-encoding': 'gzip',
+439 silly get     'cache-control': 'max-age=300',
+439 silly get     'content-length': '1994',
+439 silly get     'accept-ranges': 'bytes',
+439 silly get     date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+439 silly get     via: '1.1 varnish',
+439 silly get     age: '57',
+439 silly get     connection: 'keep-alive',
+439 silly get     'x-served-by': 'cache-lhr6322-LHR',
+439 silly get     'x-cache': 'HIT',
+439 silly get     'x-cache-hits': '12',
+439 silly get     'x-timer': 'S1479899851.269525,VS0,VE0',
+439 silly get     vary: 'Accept-Encoding' } ]
+440 verbose get saving inflight to /home/michele.sbicego/.npm/registry.npmjs.org/inflight/.cache.json
+441 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+442 http 200 https://registry.npmjs.org/fs.realpath
+443 verbose headers { server: 'nginx/1.10.1',
+443 verbose headers   'content-type': 'application/json',
+443 verbose headers   'last-modified': 'Tue, 01 Nov 2016 17:25:20 GMT',
+443 verbose headers   etag: 'W/"5818d000-107b"',
+443 verbose headers   'content-encoding': 'gzip',
+443 verbose headers   'cache-control': 'max-age=300',
+443 verbose headers   'content-length': '1391',
+443 verbose headers   'accept-ranges': 'bytes',
+443 verbose headers   date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+443 verbose headers   via: '1.1 varnish',
+443 verbose headers   age: '203',
+443 verbose headers   connection: 'keep-alive',
+443 verbose headers   'x-served-by': 'cache-lhr6333-LHR',
+443 verbose headers   'x-cache': 'HIT',
+443 verbose headers   'x-cache-hits': '17',
+443 verbose headers   'x-timer': 'S1479899851.266596,VS0,VE0',
+443 verbose headers   vary: 'Accept-Encoding' }
+444 silly get cb [ 200,
+444 silly get   { server: 'nginx/1.10.1',
+444 silly get     'content-type': 'application/json',
+444 silly get     'last-modified': 'Tue, 01 Nov 2016 17:25:20 GMT',
+444 silly get     etag: 'W/"5818d000-107b"',
+444 silly get     'content-encoding': 'gzip',
+444 silly get     'cache-control': 'max-age=300',
+444 silly get     'content-length': '1391',
+444 silly get     'accept-ranges': 'bytes',
+444 silly get     date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+444 silly get     via: '1.1 varnish',
+444 silly get     age: '203',
+444 silly get     connection: 'keep-alive',
+444 silly get     'x-served-by': 'cache-lhr6333-LHR',
+444 silly get     'x-cache': 'HIT',
+444 silly get     'x-cache-hits': '17',
+444 silly get     'x-timer': 'S1479899851.266596,VS0,VE0',
+444 silly get     vary: 'Accept-Encoding' } ]
+445 verbose get saving fs.realpath to /home/michele.sbicego/.npm/registry.npmjs.org/fs.realpath/.cache.json
+446 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+447 silly gunzTarPerm extractEntry lib/jasmine-core/example/src/Player.js
+448 silly gunzTarPerm extractEntry lib/jasmine-core/example/src/Song.js
+449 silly addNameRange number 2 { name: 'inflight', range: '>=1.0.4 <2.0.0', hasData: true }
+450 silly addNameRange versions [ 'inflight',
+450 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6' ] ]
+451 silly addNamed inflight@1.0.6
+452 verbose addNamed "1.0.6" is a plain semver version for inflight
+453 silly mapToRegistry name inflight
+454 silly mapToRegistry using default registry
+455 silly mapToRegistry registry https://registry.npmjs.org/
+456 silly mapToRegistry data Result {
+456 silly mapToRegistry   raw: 'inflight',
+456 silly mapToRegistry   scope: null,
+456 silly mapToRegistry   name: 'inflight',
+456 silly mapToRegistry   rawSpec: '',
+456 silly mapToRegistry   spec: 'latest',
+456 silly mapToRegistry   type: 'tag' }
+457 silly mapToRegistry uri https://registry.npmjs.org/inflight
+458 verbose addRemoteTarball https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz not in flight; adding
+459 verbose addRemoteTarball [ 'https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz',
+459 verbose addRemoteTarball   '49bd6331d7d02d0c09bc910a1075ba8165b56df9' ]
+460 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: true }
+461 silly addNameRange versions [ 'inherits',
+461 silly addNameRange   [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2', '2.0.3' ] ]
+462 silly addNamed inherits@2.0.3
+463 verbose addNamed "2.0.3" is a plain semver version for inherits
+464 silly gunzTarPerm extractEntry lib/jasmine-core/jasmine.css
+465 silly gunzTarPerm extractEntry requirements.txt
+466 silly mapToRegistry name inherits
+467 silly mapToRegistry using default registry
+468 silly mapToRegistry registry https://registry.npmjs.org/
+469 silly mapToRegistry data Result {
+469 silly mapToRegistry   raw: 'inherits',
+469 silly mapToRegistry   scope: null,
+469 silly mapToRegistry   name: 'inherits',
+469 silly mapToRegistry   rawSpec: '',
+469 silly mapToRegistry   spec: 'latest',
+469 silly mapToRegistry   type: 'tag' }
+470 silly mapToRegistry uri https://registry.npmjs.org/inherits
+471 verbose addRemoteTarball https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz not in flight; adding
+472 verbose addRemoteTarball [ 'https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz',
+472 verbose addRemoteTarball   '633c2c83e3da42a502f52466022480f4208261de' ]
+473 info retry fetch attempt 1 at 12:17:31 PM
+474 info attempt registry request try #1 at 12:17:31 PM
+475 http fetch GET https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz
+476 info retry fetch attempt 1 at 12:17:31 PM
+477 info attempt registry request try #1 at 12:17:31 PM
+478 http fetch GET https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz
+479 silly addNameRange number 2 { name: 'fs.realpath', range: '>=1.0.0 <2.0.0', hasData: true }
+480 silly addNameRange versions [ 'fs.realpath', [ '0.0.0', '1.0.0' ] ]
+481 silly addNamed fs.realpath@1.0.0
+482 verbose addNamed "1.0.0" is a plain semver version for fs.realpath
+483 silly mapToRegistry name fs.realpath
+484 silly mapToRegistry using default registry
+485 silly mapToRegistry registry https://registry.npmjs.org/
+486 silly mapToRegistry data Result {
+486 silly mapToRegistry   raw: 'fs.realpath',
+486 silly mapToRegistry   scope: null,
+486 silly mapToRegistry   name: 'fs.realpath',
+486 silly mapToRegistry   rawSpec: '',
+486 silly mapToRegistry   spec: 'latest',
+486 silly mapToRegistry   type: 'tag' }
+487 silly mapToRegistry uri https://registry.npmjs.org/fs.realpath
+488 verbose addRemoteTarball https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz not in flight; adding
+489 verbose addRemoteTarball [ 'https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz',
+489 verbose addRemoteTarball   '1504ad2523158caa40db4a2787cb01411994ea4f' ]
+490 info retry fetch attempt 1 at 12:17:31 PM
+491 info attempt registry request try #1 at 12:17:31 PM
+492 http fetch GET https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz
+493 verbose write writing to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit/package.json
+494 info preinstall exit@0.1.2
+495 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit/package.json
+496 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit/package.json
+497 silly install resolved []
+498 verbose about to build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit
+499 info build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit
+500 info linkStuff exit@0.1.2
+501 silly linkStuff exit@0.1.2 has /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules as its parent node_modules
+502 verbose linkBins exit@0.1.2
+503 verbose linkMans exit@0.1.2
+504 verbose rebuildBundles exit@0.1.2
+505 info install exit@0.1.2
+506 info postinstall exit@0.1.2
+507 http fetch 200 https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz
+508 silly fetchAndShaCheck shasum 49bd6331d7d02d0c09bc910a1075ba8165b56df9
+509 http fetch 200 https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz
+510 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/inflight/-/inflight-1.0.6.tgz not in flight; adding
+511 verbose addTmpTarball already have metadata; skipping unpack for inflight@1.0.6
+512 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+513 silly fetchAndShaCheck shasum 633c2c83e3da42a502f52466022480f4208261de
+514 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/inherits/-/inherits-2.0.3.tgz not in flight; adding
+515 verbose addTmpTarball already have metadata; skipping unpack for inherits@2.0.3
+516 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+517 verbose unlock done using /home/michele.sbicego/.npm/_locks/exit-a9b88e8f2f563ccd.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/exit
+518 http fetch 200 https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz
+519 silly fetchAndShaCheck shasum 1504ad2523158caa40db4a2787cb01411994ea4f
+520 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz not in flight; adding
+521 verbose addTmpTarball already have metadata; skipping unpack for fs.realpath@1.0.0
+522 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+523 silly cache afterAdd inflight@1.0.6
+524 verbose afterAdd /home/michele.sbicego/.npm/inflight/1.0.6/package/package.json not in flight; writing
+525 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+526 http 200 https://registry.npmjs.org/path-is-absolute
+527 verbose headers { server: 'nginx/1.10.1',
+527 verbose headers   'content-type': 'application/json',
+527 verbose headers   'last-modified': 'Tue, 01 Nov 2016 18:01:04 GMT',
+527 verbose headers   etag: 'W/"5818d860-1312"',
+527 verbose headers   'content-encoding': 'gzip',
+527 verbose headers   'cache-control': 'max-age=300',
+527 verbose headers   'content-length': '1379',
+527 verbose headers   'accept-ranges': 'bytes',
+527 verbose headers   date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+527 verbose headers   via: '1.1 varnish',
+527 verbose headers   age: '18',
+527 verbose headers   connection: 'keep-alive',
+527 verbose headers   'x-served-by': 'cache-lhr6350-LHR',
+527 verbose headers   'x-cache': 'HIT',
+527 verbose headers   'x-cache-hits': '4',
+527 verbose headers   'x-timer': 'S1479899851.369042,VS0,VE0',
+527 verbose headers   vary: 'Accept-Encoding' }
+528 silly get cb [ 200,
+528 silly get   { server: 'nginx/1.10.1',
+528 silly get     'content-type': 'application/json',
+528 silly get     'last-modified': 'Tue, 01 Nov 2016 18:01:04 GMT',
+528 silly get     etag: 'W/"5818d860-1312"',
+528 silly get     'content-encoding': 'gzip',
+528 silly get     'cache-control': 'max-age=300',
+528 silly get     'content-length': '1379',
+528 silly get     'accept-ranges': 'bytes',
+528 silly get     date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+528 silly get     via: '1.1 varnish',
+528 silly get     age: '18',
+528 silly get     connection: 'keep-alive',
+528 silly get     'x-served-by': 'cache-lhr6350-LHR',
+528 silly get     'x-cache': 'HIT',
+528 silly get     'x-cache-hits': '4',
+528 silly get     'x-timer': 'S1479899851.369042,VS0,VE0',
+528 silly get     vary: 'Accept-Encoding' } ]
+529 verbose get saving path-is-absolute to /home/michele.sbicego/.npm/registry.npmjs.org/path-is-absolute/.cache.json
+530 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+531 http 200 https://registry.npmjs.org/once
+532 verbose headers { server: 'nginx/1.10.1',
+532 verbose headers   'content-type': 'application/json',
+532 verbose headers   'last-modified': 'Tue, 22 Nov 2016 09:06:10 GMT',
+532 verbose headers   etag: 'W/"58340a82-2579"',
+532 verbose headers   'content-encoding': 'gzip',
+532 verbose headers   'cache-control': 'max-age=300',
+532 verbose headers   'content-length': '2394',
+532 verbose headers   'accept-ranges': 'bytes',
+532 verbose headers   date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+532 verbose headers   via: '1.1 varnish',
+532 verbose headers   age: '135',
+532 verbose headers   connection: 'keep-alive',
+532 verbose headers   'x-served-by': 'cache-lhr6322-LHR',
+532 verbose headers   'x-cache': 'HIT',
+532 verbose headers   'x-cache-hits': '19',
+532 verbose headers   'x-timer': 'S1479899851.372338,VS0,VE0',
+532 verbose headers   vary: 'Accept-Encoding' }
+533 silly get cb [ 200,
+533 silly get   { server: 'nginx/1.10.1',
+533 silly get     'content-type': 'application/json',
+533 silly get     'last-modified': 'Tue, 22 Nov 2016 09:06:10 GMT',
+533 silly get     etag: 'W/"58340a82-2579"',
+533 silly get     'content-encoding': 'gzip',
+533 silly get     'cache-control': 'max-age=300',
+533 silly get     'content-length': '2394',
+533 silly get     'accept-ranges': 'bytes',
+533 silly get     date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+533 silly get     via: '1.1 varnish',
+533 silly get     age: '135',
+533 silly get     connection: 'keep-alive',
+533 silly get     'x-served-by': 'cache-lhr6322-LHR',
+533 silly get     'x-cache': 'HIT',
+533 silly get     'x-cache-hits': '19',
+533 silly get     'x-timer': 'S1479899851.372338,VS0,VE0',
+533 silly get     vary: 'Accept-Encoding' } ]
+534 verbose get saving once to /home/michele.sbicego/.npm/registry.npmjs.org/once/.cache.json
+535 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+536 verbose afterAdd /home/michele.sbicego/.npm/inflight/1.0.6/package/package.json written
+537 http 200 https://registry.npmjs.org/minimatch
+538 verbose headers { server: 'nginx/1.10.1',
+538 verbose headers   'content-type': 'application/json',
+538 verbose headers   'last-modified': 'Tue, 15 Nov 2016 13:10:43 GMT',
+538 verbose headers   etag: 'W/"582b0953-cb8b"',
+538 verbose headers   'content-encoding': 'gzip',
+538 verbose headers   'cache-control': 'max-age=300',
+538 verbose headers   'content-length': '7729',
+538 verbose headers   'accept-ranges': 'bytes',
+538 verbose headers   date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+538 verbose headers   via: '1.1 varnish',
+538 verbose headers   age: '57',
+538 verbose headers   connection: 'keep-alive',
+538 verbose headers   'x-served-by': 'cache-lhr6329-LHR',
+538 verbose headers   'x-cache': 'HIT',
+538 verbose headers   'x-cache-hits': '10',
+538 verbose headers   'x-timer': 'S1479899851.369638,VS0,VE0',
+538 verbose headers   vary: 'Accept-Encoding' }
+539 silly get cb [ 200,
+539 silly get   { server: 'nginx/1.10.1',
+539 silly get     'content-type': 'application/json',
+539 silly get     'last-modified': 'Tue, 15 Nov 2016 13:10:43 GMT',
+539 silly get     etag: 'W/"582b0953-cb8b"',
+539 silly get     'content-encoding': 'gzip',
+539 silly get     'cache-control': 'max-age=300',
+539 silly get     'content-length': '7729',
+539 silly get     'accept-ranges': 'bytes',
+539 silly get     date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+539 silly get     via: '1.1 varnish',
+539 silly get     age: '57',
+539 silly get     connection: 'keep-alive',
+539 silly get     'x-served-by': 'cache-lhr6329-LHR',
+539 silly get     'x-cache': 'HIT',
+539 silly get     'x-cache-hits': '10',
+539 silly get     'x-timer': 'S1479899851.369638,VS0,VE0',
+539 silly get     vary: 'Accept-Encoding' } ]
+540 verbose get saving minimatch to /home/michele.sbicego/.npm/registry.npmjs.org/minimatch/.cache.json
+541 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+542 silly cache afterAdd fs.realpath@1.0.0
+543 verbose afterAdd /home/michele.sbicego/.npm/fs.realpath/1.0.0/package/package.json not in flight; writing
+544 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+545 silly cache afterAdd inherits@2.0.3
+546 verbose afterAdd /home/michele.sbicego/.npm/inherits/2.0.3/package/package.json not in flight; writing
+547 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+548 verbose afterAdd /home/michele.sbicego/.npm/fs.realpath/1.0.0/package/package.json written
+549 silly addNameRange number 2 { name: 'once', range: '>=1.3.0 <2.0.0', hasData: true }
+550 silly addNameRange versions [ 'once',
+550 silly addNameRange   [ '1.1.1', '1.2.0', '1.3.0', '1.3.1', '1.3.2', '1.3.3', '1.4.0' ] ]
+551 silly addNamed once@1.4.0
+552 verbose addNamed "1.4.0" is a plain semver version for once
+553 silly addNameRange number 2 { name: 'path-is-absolute',
+553 silly addNameRange   range: '>=1.0.0 <2.0.0',
+553 silly addNameRange   hasData: true }
+554 silly addNameRange versions [ 'path-is-absolute', [ '1.0.0', '1.0.1' ] ]
+555 silly addNamed path-is-absolute@1.0.1
+556 verbose addNamed "1.0.1" is a plain semver version for path-is-absolute
+557 verbose afterAdd /home/michele.sbicego/.npm/inherits/2.0.3/package/package.json written
+558 silly mapToRegistry name once
+559 silly mapToRegistry using default registry
+560 silly mapToRegistry registry https://registry.npmjs.org/
+561 silly mapToRegistry data Result {
+561 silly mapToRegistry   raw: 'once',
+561 silly mapToRegistry   scope: null,
+561 silly mapToRegistry   name: 'once',
+561 silly mapToRegistry   rawSpec: '',
+561 silly mapToRegistry   spec: 'latest',
+561 silly mapToRegistry   type: 'tag' }
+562 silly mapToRegistry uri https://registry.npmjs.org/once
+563 verbose addRemoteTarball https://registry.npmjs.org/once/-/once-1.4.0.tgz not in flight; adding
+564 verbose addRemoteTarball [ 'https://registry.npmjs.org/once/-/once-1.4.0.tgz',
+564 verbose addRemoteTarball   '583b1aa775961d4b113ac17d9c50baef9dd76bd1' ]
+565 silly mapToRegistry name path-is-absolute
+566 silly mapToRegistry using default registry
+567 silly mapToRegistry registry https://registry.npmjs.org/
+568 silly mapToRegistry data Result {
+568 silly mapToRegistry   raw: 'path-is-absolute',
+568 silly mapToRegistry   scope: null,
+568 silly mapToRegistry   name: 'path-is-absolute',
+568 silly mapToRegistry   rawSpec: '',
+568 silly mapToRegistry   spec: 'latest',
+568 silly mapToRegistry   type: 'tag' }
+569 silly mapToRegistry uri https://registry.npmjs.org/path-is-absolute
+570 verbose addRemoteTarball https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz not in flight; adding
+571 verbose addRemoteTarball [ 'https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz',
+571 verbose addRemoteTarball   '174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f' ]
+572 info retry fetch attempt 1 at 12:17:31 PM
+573 info attempt registry request try #1 at 12:17:31 PM
+574 http fetch GET https://registry.npmjs.org/once/-/once-1.4.0.tgz
+575 info retry fetch attempt 1 at 12:17:31 PM
+576 info attempt registry request try #1 at 12:17:31 PM
+577 http fetch GET https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz
+578 silly addNameRange number 2 { name: 'minimatch', range: '>=3.0.2 <4.0.0', hasData: true }
+579 silly addNameRange versions [ 'minimatch',
+579 silly addNameRange   [ '0.0.1',
+579 silly addNameRange     '0.0.2',
+579 silly addNameRange     '0.0.4',
+579 silly addNameRange     '0.0.5',
+579 silly addNameRange     '0.1.1',
+579 silly addNameRange     '0.1.2',
+579 silly addNameRange     '0.1.3',
+579 silly addNameRange     '0.1.4',
+579 silly addNameRange     '0.1.5',
+579 silly addNameRange     '0.2.0',
+579 silly addNameRange     '0.2.2',
+579 silly addNameRange     '0.2.3',
+579 silly addNameRange     '0.2.4',
+579 silly addNameRange     '0.2.5',
+579 silly addNameRange     '0.2.6',
+579 silly addNameRange     '0.2.7',
+579 silly addNameRange     '0.2.8',
+579 silly addNameRange     '0.2.9',
+579 silly addNameRange     '0.2.10',
+579 silly addNameRange     '0.2.11',
+579 silly addNameRange     '0.2.12',
+579 silly addNameRange     '0.2.13',
+579 silly addNameRange     '0.2.14',
+579 silly addNameRange     '0.3.0',
+579 silly addNameRange     '0.4.0',
+579 silly addNameRange     '1.0.0',
+579 silly addNameRange     '2.0.0',
+579 silly addNameRange     '2.0.1',
+579 silly addNameRange     '2.0.2',
+579 silly addNameRange     '2.0.3',
+579 silly addNameRange     '2.0.4',
+579 silly addNameRange     '2.0.5',
+579 silly addNameRange     '2.0.6',
+579 silly addNameRange     '2.0.7',
+579 silly addNameRange     '2.0.8',
+579 silly addNameRange     '2.0.9',
+579 silly addNameRange     '2.0.10',
+579 silly addNameRange     '3.0.0',
+579 silly addNameRange     '3.0.2',
+579 silly addNameRange     '3.0.3' ] ]
+580 silly addNamed minimatch@3.0.3
+581 verbose addNamed "3.0.3" is a plain semver version for minimatch
+582 silly mapToRegistry name minimatch
+583 silly mapToRegistry using default registry
+584 silly mapToRegistry registry https://registry.npmjs.org/
+585 silly mapToRegistry data Result {
+585 silly mapToRegistry   raw: 'minimatch',
+585 silly mapToRegistry   scope: null,
+585 silly mapToRegistry   name: 'minimatch',
+585 silly mapToRegistry   rawSpec: '',
+585 silly mapToRegistry   spec: 'latest',
+585 silly mapToRegistry   type: 'tag' }
+586 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+587 verbose addRemoteTarball https://registry.npmjs.org/minimatch/-/minimatch-3.0.3.tgz not in flight; adding
+588 verbose addRemoteTarball [ 'https://registry.npmjs.org/minimatch/-/minimatch-3.0.3.tgz',
+588 verbose addRemoteTarball   '2a4e4090b96b2db06a9d7df01055a62a77c9b774' ]
+589 info retry fetch attempt 1 at 12:17:31 PM
+590 info attempt registry request try #1 at 12:17:31 PM
+591 http fetch GET https://registry.npmjs.org/minimatch/-/minimatch-3.0.3.tgz
+592 http fetch 200 https://registry.npmjs.org/once/-/once-1.4.0.tgz
+593 silly fetchAndShaCheck shasum 583b1aa775961d4b113ac17d9c50baef9dd76bd1
+594 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/once/-/once-1.4.0.tgz not in flight; adding
+595 verbose addTmpTarball already have metadata; skipping unpack for once@1.4.0
+596 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+597 http fetch 200 https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz
+598 silly fetchAndShaCheck shasum 174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f
+599 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz not in flight; adding
+600 verbose addTmpTarball already have metadata; skipping unpack for path-is-absolute@1.0.1
+601 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+602 http fetch 200 https://registry.npmjs.org/minimatch/-/minimatch-3.0.3.tgz
+603 silly fetchAndShaCheck shasum 2a4e4090b96b2db06a9d7df01055a62a77c9b774
+604 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/minimatch/-/minimatch-3.0.3.tgz not in flight; adding
+605 verbose addTmpTarball already have metadata; skipping unpack for minimatch@3.0.3
+606 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+607 silly cache afterAdd once@1.4.0
+608 verbose afterAdd /home/michele.sbicego/.npm/once/1.4.0/package/package.json not in flight; writing
+609 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+610 silly cache afterAdd path-is-absolute@1.0.1
+611 verbose afterAdd /home/michele.sbicego/.npm/path-is-absolute/1.0.1/package/package.json not in flight; writing
+612 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+613 verbose afterAdd /home/michele.sbicego/.npm/once/1.4.0/package/package.json written
+614 silly cache afterAdd minimatch@3.0.3
+615 verbose afterAdd /home/michele.sbicego/.npm/minimatch/3.0.3/package/package.json not in flight; writing
+616 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+617 verbose afterAdd /home/michele.sbicego/.npm/path-is-absolute/1.0.1/package/package.json written
+618 verbose afterAdd /home/michele.sbicego/.npm/minimatch/3.0.3/package/package.json written
+619 silly install resolved [ { name: 'inflight',
+619 silly install resolved     version: '1.0.6',
+619 silly install resolved     description: 'Add callbacks to requests in flight to avoid async duplication',
+619 silly install resolved     main: 'inflight.js',
+619 silly install resolved     files: [ 'inflight.js' ],
+619 silly install resolved     dependencies: { once: '^1.3.0', wrappy: '1' },
+619 silly install resolved     devDependencies: { tap: '^7.1.2' },
+619 silly install resolved     scripts: { test: 'tap test.js --100' },
+619 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/npm/inflight.git' },
+619 silly install resolved     author:
+619 silly install resolved      { name: 'Isaac Z. Schlueter',
+619 silly install resolved        email: 'i@izs.me',
+619 silly install resolved        url: 'http://blog.izs.me/' },
+619 silly install resolved     bugs: { url: 'https://github.com/isaacs/inflight/issues' },
+619 silly install resolved     homepage: 'https://github.com/isaacs/inflight',
+619 silly install resolved     license: 'ISC',
+619 silly install resolved     gitHead: 'a547881738c8f57b27795e584071d67cf6ac1a57',
+619 silly install resolved     _id: 'inflight@1.0.6',
+619 silly install resolved     _shasum: '49bd6331d7d02d0c09bc910a1075ba8165b56df9',
+619 silly install resolved     _from: 'inflight@>=1.0.4 <2.0.0',
+619 silly install resolved     _npmVersion: '3.10.7',
+619 silly install resolved     _nodeVersion: '6.5.0',
+619 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+619 silly install resolved     dist:
+619 silly install resolved      { shasum: '49bd6331d7d02d0c09bc910a1075ba8165b56df9',
+619 silly install resolved        tarball: 'https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz' },
+619 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+619 silly install resolved     _npmOperationalInternal:
+619 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+619 silly install resolved        tmp: 'tmp/inflight-1.0.6.tgz_1476330807696_0.10388551792129874' },
+619 silly install resolved     directories: {},
+619 silly install resolved     _resolved: 'https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz' },
+619 silly install resolved   { name: 'fs.realpath',
+619 silly install resolved     version: '1.0.0',
+619 silly install resolved     description: 'Use node\'s fs.realpath, but fall back to the JS implementation if the native one fails',
+619 silly install resolved     main: 'index.js',
+619 silly install resolved     dependencies: {},
+619 silly install resolved     devDependencies: {},
+619 silly install resolved     scripts: { test: 'tap test/*.js --cov' },
+619 silly install resolved     repository:
+619 silly install resolved      { type: 'git',
+619 silly install resolved        url: 'git+https://github.com/isaacs/fs.realpath.git' },
+619 silly install resolved     keywords: [ 'realpath', 'fs', 'polyfill' ],
+619 silly install resolved     author:
+619 silly install resolved      { name: 'Isaac Z. Schlueter',
+619 silly install resolved        email: 'i@izs.me',
+619 silly install resolved        url: 'http://blog.izs.me/' },
+619 silly install resolved     license: 'ISC',
+619 silly install resolved     files: [ 'old.js', 'index.js' ],
+619 silly install resolved     gitHead: '03e7c884431fe185dfebbc9b771aeca339c1807a',
+619 silly install resolved     bugs: { url: 'https://github.com/isaacs/fs.realpath/issues' },
+619 silly install resolved     homepage: 'https://github.com/isaacs/fs.realpath#readme',
+619 silly install resolved     _id: 'fs.realpath@1.0.0',
+619 silly install resolved     _shasum: '1504ad2523158caa40db4a2787cb01411994ea4f',
+619 silly install resolved     _from: 'fs.realpath@>=1.0.0 <2.0.0',
+619 silly install resolved     _npmVersion: '3.9.1',
+619 silly install resolved     _nodeVersion: '4.4.4',
+619 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+619 silly install resolved     dist:
+619 silly install resolved      { shasum: '1504ad2523158caa40db4a2787cb01411994ea4f',
+619 silly install resolved        tarball: 'https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz' },
+619 silly install resolved     maintainers: [ [Object] ],
+619 silly install resolved     _npmOperationalInternal:
+619 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+619 silly install resolved        tmp: 'tmp/fs.realpath-1.0.0.tgz_1466015941059_0.3332864767871797' },
+619 silly install resolved     directories: {},
+619 silly install resolved     _resolved: 'https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz' },
+619 silly install resolved   { name: 'inherits',
+619 silly install resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+619 silly install resolved     version: '2.0.3',
+619 silly install resolved     keywords:
+619 silly install resolved      [ 'inheritance',
+619 silly install resolved        'class',
+619 silly install resolved        'klass',
+619 silly install resolved        'oop',
+619 silly install resolved        'object-oriented',
+619 silly install resolved        'inherits',
+619 silly install resolved        'browser',
+619 silly install resolved        'browserify' ],
+619 silly install resolved     main: './inherits.js',
+619 silly install resolved     browser: './inherits_browser.js',
+619 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits.git' },
+619 silly install resolved     license: 'ISC',
+619 silly install resolved     scripts: { test: 'node test' },
+619 silly install resolved     devDependencies: { tap: '^7.1.0' },
+619 silly install resolved     files: [ 'inherits.js', 'inherits_browser.js' ],
+619 silly install resolved     gitHead: 'e05d0fb27c61a3ec687214f0476386b765364d5f',
+619 silly install resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+619 silly install resolved     homepage: 'https://github.com/isaacs/inherits#readme',
+619 silly install resolved     _id: 'inherits@2.0.3',
+619 silly install resolved     _shasum: '633c2c83e3da42a502f52466022480f4208261de',
+619 silly install resolved     _from: 'inherits@>=2.0.0 <3.0.0',
+619 silly install resolved     _npmVersion: '3.10.7',
+619 silly install resolved     _nodeVersion: '6.5.0',
+619 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+619 silly install resolved     dist:
+619 silly install resolved      { shasum: '633c2c83e3da42a502f52466022480f4208261de',
+619 silly install resolved        tarball: 'https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz' },
+619 silly install resolved     maintainers: [ [Object] ],
+619 silly install resolved     _npmOperationalInternal:
+619 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+619 silly install resolved        tmp: 'tmp/inherits-2.0.3.tgz_1473295776489_0.08142363070510328' },
+619 silly install resolved     directories: {},
+619 silly install resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz' },
+619 silly install resolved   { name: 'once',
+619 silly install resolved     version: '1.4.0',
+619 silly install resolved     description: 'Run a function exactly one time',
+619 silly install resolved     main: 'once.js',
+619 silly install resolved     directories: { test: 'test' },
+619 silly install resolved     dependencies: { wrappy: '1' },
+619 silly install resolved     devDependencies: { tap: '^7.0.1' },
+619 silly install resolved     scripts: { test: 'tap test/*.js' },
+619 silly install resolved     files: [ 'once.js' ],
+619 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/once.git' },
+619 silly install resolved     keywords: [ 'once', 'function', 'one', 'single' ],
+619 silly install resolved     author:
+619 silly install resolved      { name: 'Isaac Z. Schlueter',
+619 silly install resolved        email: 'i@izs.me',
+619 silly install resolved        url: 'http://blog.izs.me/' },
+619 silly install resolved     license: 'ISC',
+619 silly install resolved     gitHead: '0e614d9f5a7e6f0305c625f6b581f6d80b33b8a6',
+619 silly install resolved     bugs: { url: 'https://github.com/isaacs/once/issues' },
+619 silly install resolved     homepage: 'https://github.com/isaacs/once#readme',
+619 silly install resolved     _id: 'once@1.4.0',
+619 silly install resolved     _shasum: '583b1aa775961d4b113ac17d9c50baef9dd76bd1',
+619 silly install resolved     _from: 'once@>=1.3.0 <2.0.0',
+619 silly install resolved     _npmVersion: '3.10.7',
+619 silly install resolved     _nodeVersion: '6.5.0',
+619 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+619 silly install resolved     dist:
+619 silly install resolved      { shasum: '583b1aa775961d4b113ac17d9c50baef9dd76bd1',
+619 silly install resolved        tarball: 'https://registry.npmjs.org/once/-/once-1.4.0.tgz' },
+619 silly install resolved     maintainers: [ [Object] ],
+619 silly install resolved     _npmOperationalInternal:
+619 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+619 silly install resolved        tmp: 'tmp/once-1.4.0.tgz_1473196269128_0.537820661207661' },
+619 silly install resolved     _resolved: 'https://registry.npmjs.org/once/-/once-1.4.0.tgz' },
+619 silly install resolved   { name: 'path-is-absolute',
+619 silly install resolved     version: '1.0.1',
+619 silly install resolved     description: 'Node.js 0.12 path.isAbsolute() ponyfill',
+619 silly install resolved     license: 'MIT',
+619 silly install resolved     repository:
+619 silly install resolved      { type: 'git',
+619 silly install resolved        url: 'git+https://github.com/sindresorhus/path-is-absolute.git' },
+619 silly install resolved     author:
+619 silly install resolved      { name: 'Sindre Sorhus',
+619 silly install resolved        email: 'sindresorhus@gmail.com',
+619 silly install resolved        url: 'sindresorhus.com' },
+619 silly install resolved     engines: { node: '>=0.10.0' },
+619 silly install resolved     scripts: { test: 'xo && node test.js' },
+619 silly install resolved     files: [ 'index.js' ],
+619 silly install resolved     keywords:
+619 silly install resolved      [ 'path',
+619 silly install resolved        'paths',
+619 silly install resolved        'file',
+619 silly install resolved        'dir',
+619 silly install resolved        'absolute',
+619 silly install resolved        'isabsolute',
+619 silly install resolved        'is-absolute',
+619 silly install resolved        'built-in',
+619 silly install resolved        'util',
+619 silly install resolved        'utils',
+619 silly install resolved        'core',
+619 silly install resolved        'ponyfill',
+619 silly install resolved        'polyfill',
+619 silly install resolved        'shim',
+619 silly install resolved        'is',
+619 silly install resolved        'detect',
+619 silly install resolved        'check' ],
+619 silly install resolved     devDependencies: { xo: '^0.16.0' },
+619 silly install resolved     gitHead: 'edc91d348b21dac2ab65ea2fbec2868e2eff5eb6',
+619 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/path-is-absolute/issues' },
+619 silly install resolved     homepage: 'https://github.com/sindresorhus/path-is-absolute#readme',
+619 silly install resolved     _id: 'path-is-absolute@1.0.1',
+619 silly install resolved     _shasum: '174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f',
+619 silly install resolved     _from: 'path-is-absolute@>=1.0.0 <2.0.0',
+619 silly install resolved     _npmVersion: '3.10.3',
+619 silly install resolved     _nodeVersion: '6.6.0',
+619 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+619 silly install resolved     dist:
+619 silly install resolved      { shasum: '174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f',
+619 silly install resolved        tarball: 'https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz' },
+619 silly install resolved     maintainers: [ [Object] ],
+619 silly install resolved     _npmOperationalInternal:
+619 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+619 silly install resolved        tmp: 'tmp/path-is-absolute-1.0.1.tgz_1475210523565_0.9876507974695414' },
+619 silly install resolved     directories: {},
+619 silly install resolved     _resolved: 'https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz' },
+619 silly install resolved   { author:
+619 silly install resolved      { name: 'Isaac Z. Schlueter',
+619 silly install resolved        email: 'i@izs.me',
+619 silly install resolved        url: 'http://blog.izs.me' },
+619 silly install resolved     name: 'minimatch',
+619 silly install resolved     description: 'a glob matcher in javascript',
+619 silly install resolved     version: '3.0.3',
+619 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+619 silly install resolved     main: 'minimatch.js',
+619 silly install resolved     scripts:
+619 silly install resolved      { posttest: 'standard minimatch.js test/*.js',
+619 silly install resolved        test: 'tap test/*.js' },
+619 silly install resolved     engines: { node: '*' },
+619 silly install resolved     dependencies: { 'brace-expansion': '^1.0.0' },
+619 silly install resolved     devDependencies: { standard: '^3.7.2', tap: '^5.6.0' },
+619 silly install resolved     license: 'ISC',
+619 silly install resolved     files: [ 'minimatch.js' ],
+619 silly install resolved     gitHead: 'eed89491bd4a4e6bc463aac0dfb5c29ef0d1dc13',
+619 silly install resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+619 silly install resolved     homepage: 'https://github.com/isaacs/minimatch#readme',
+619 silly install resolved     _id: 'minimatch@3.0.3',
+619 silly install resolved     _shasum: '2a4e4090b96b2db06a9d7df01055a62a77c9b774',
+619 silly install resolved     _from: 'minimatch@>=3.0.2 <4.0.0',
+619 silly install resolved     _npmVersion: '3.10.6',
+619 silly install resolved     _nodeVersion: '4.4.4',
+619 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+619 silly install resolved     dist:
+619 silly install resolved      { shasum: '2a4e4090b96b2db06a9d7df01055a62a77c9b774',
+619 silly install resolved        tarball: 'https://registry.npmjs.org/minimatch/-/minimatch-3.0.3.tgz' },
+619 silly install resolved     maintainers: [ [Object] ],
+619 silly install resolved     _npmOperationalInternal:
+619 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+619 silly install resolved        tmp: 'tmp/minimatch-3.0.3.tgz_1470678322731_0.1892083385027945' },
+619 silly install resolved     directories: {},
+619 silly install resolved     _resolved: 'https://registry.npmjs.org/minimatch/-/minimatch-3.0.3.tgz' } ]
+620 info install inflight@1.0.6 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+621 info install fs.realpath@1.0.0 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+622 info install inherits@2.0.3 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+623 info install once@1.4.0 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+624 info install path-is-absolute@1.0.1 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+625 info install minimatch@3.0.3 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+626 info installOne inflight@1.0.6
+627 verbose installOne of inflight to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob not in flight; installing
+628 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+629 info installOne fs.realpath@1.0.0
+630 verbose installOne of fs.realpath to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob not in flight; installing
+631 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+632 info installOne inherits@2.0.3
+633 verbose installOne of inherits to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob not in flight; installing
+634 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+635 info installOne once@1.4.0
+636 verbose installOne of once to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob not in flight; installing
+637 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+638 info installOne path-is-absolute@1.0.1
+639 verbose installOne of path-is-absolute to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob not in flight; installing
+640 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+641 info installOne minimatch@3.0.3
+642 verbose installOne of minimatch to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob not in flight; installing
+643 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+644 verbose lock using /home/michele.sbicego/.npm/_locks/inflight-765208e0f575e048.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+645 verbose lock using /home/michele.sbicego/.npm/_locks/path-is-absolute-4cf849e8f8d4adfe.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+646 verbose lock using /home/michele.sbicego/.npm/_locks/minimatch-e6202658af41074c.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch
+647 silly install write writing inflight 1.0.6 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+648 silly install write writing path-is-absolute 1.0.1 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+649 silly install write writing minimatch 3.0.3 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch
+650 verbose lock using /home/michele.sbicego/.npm/_locks/fs-realpath-1cc57d798a69f2ba.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+651 silly install write writing fs.realpath 1.0.0 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+652 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/inflight
+653 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+654 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/minimatch
+655 verbose lock using /home/michele.sbicego/.npm/_locks/inherits-782460a839a5e90f.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits
+656 silly install write writing inherits 2.0.3 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits
+657 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+658 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+659 verbose lock using /home/michele.sbicego/.npm/_locks/once-37970ebdfc9751fb.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once
+660 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+661 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+662 verbose tar unpack /home/michele.sbicego/.npm/inflight/1.0.6/package.tgz
+663 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+664 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight is being purged
+665 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+666 silly install write writing once 1.4.0 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once
+667 verbose tar unpack /home/michele.sbicego/.npm/path-is-absolute/1.0.1/package.tgz
+668 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+669 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute is being purged
+670 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+671 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+672 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch
+673 silly gunzTarPerm modes [ '755', '644' ]
+674 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+675 silly gunzTarPerm modes [ '755', '644' ]
+676 verbose tar unpack /home/michele.sbicego/.npm/minimatch/3.0.3/package.tgz
+677 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch
+678 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch is being purged
+679 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch
+680 silly gunzTarPerm modes [ '755', '644' ]
+681 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+682 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+683 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/inherits
+684 verbose tar unpack /home/michele.sbicego/.npm/fs.realpath/1.0.0/package.tgz
+685 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+686 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath is being purged
+687 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+688 silly gunzTarPerm modes [ '755', '644' ]
+689 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/once
+690 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+691 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits
+692 verbose tar unpack /home/michele.sbicego/.npm/inherits/2.0.3/package.tgz
+693 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits
+694 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits is being purged
+695 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits
+696 silly gunzTarPerm extractEntry package.json
+697 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+698 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once
+699 silly gunzTarPerm modes [ '755', '644' ]
+700 verbose tar unpack /home/michele.sbicego/.npm/once/1.4.0/package.tgz
+701 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once
+702 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once is being purged
+703 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once
+704 silly gunzTarPerm extractEntry package.json
+705 silly gunzTarPerm modes [ '755', '644' ]
+706 silly gunzTarPerm extractEntry package.json
+707 silly gunzTarPerm extractEntry README.md
+708 silly gunzTarPerm extractEntry LICENSE
+709 verbose write writing to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core/package.json
+710 error tar.unpack untar error /home/michele.sbicego/.npm/minimatch/3.0.3/package.tgz
+711 silly gunzTarPerm extractEntry package.json
+712 silly gunzTarPerm extractEntry index.js
+713 silly gunzTarPerm extractEntry license
+714 verbose unlock done using /home/michele.sbicego/.npm/_locks/minimatch-e6202658af41074c.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch
+715 silly gunzTarPerm extractEntry package.json
+716 verbose unlock done using /home/michele.sbicego/.npm/_locks/jasmine-core-59923bb19ab9c3d3.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core
+717 silly gunzTarPerm extractEntry package.json
+718 silly gunzTarPerm extractEntry README.md
+719 silly gunzTarPerm extractEntry LICENSE
+720 silly gunzTarPerm extractEntry inflight.js
+721 silly gunzTarPerm extractEntry README.md
+722 silly gunzTarPerm extractEntry LICENSE
+723 silly gunzTarPerm extractEntry readme.md
+724 silly gunzTarPerm extractEntry inherits.js
+725 silly gunzTarPerm extractEntry inherits_browser.js
+726 silly gunzTarPerm extractEntry index.js
+727 silly gunzTarPerm extractEntry old.js
+728 silly gunzTarPerm extractEntry README.md
+729 silly gunzTarPerm extractEntry LICENSE
+730 silly gunzTarPerm extractEntry once.js
+731 verbose write writing to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/package.json
+732 error tar.unpack untar error /home/michele.sbicego/.npm/once/1.4.0/package.tgz
+733 verbose unlock done using /home/michele.sbicego/.npm/_locks/once-37970ebdfc9751fb.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once
+734 error tar.unpack untar error /home/michele.sbicego/.npm/fs.realpath/1.0.0/package.tgz
+735 verbose unlock done using /home/michele.sbicego/.npm/_locks/fs-realpath-1cc57d798a69f2ba.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+736 info preinstall inflight@1.0.6
+737 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/package.json
+738 verbose write writing to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits/package.json
+739 info preinstall inherits@2.0.3
+740 silly prepareForInstallMany adding wrappy@1 from inflight dependencies
+741 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/package.json
+742 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits/package.json
+743 verbose write writing to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute/package.json
+744 silly cache add args [ 'wrappy@1', null ]
+745 verbose cache add spec wrappy@1
+746 silly cache add parsed spec Result {
+746 silly cache add   raw: 'wrappy@1',
+746 silly cache add   scope: null,
+746 silly cache add   name: 'wrappy',
+746 silly cache add   rawSpec: '1',
+746 silly cache add   spec: '>=1.0.0 <2.0.0',
+746 silly cache add   type: 'range' }
+747 silly addNamed wrappy@>=1.0.0 <2.0.0
+748 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for wrappy
+749 silly addNameRange { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: false }
+750 silly mapToRegistry name wrappy
+751 silly mapToRegistry using default registry
+752 silly mapToRegistry registry https://registry.npmjs.org/
+753 silly mapToRegistry data Result {
+753 silly mapToRegistry   raw: 'wrappy',
+753 silly mapToRegistry   scope: null,
+753 silly mapToRegistry   name: 'wrappy',
+753 silly mapToRegistry   rawSpec: '',
+753 silly mapToRegistry   spec: 'latest',
+753 silly mapToRegistry   type: 'tag' }
+754 silly mapToRegistry uri https://registry.npmjs.org/wrappy
+755 verbose addNameRange registry:https://registry.npmjs.org/wrappy not in flight; fetching
+756 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits/package.json
+757 verbose request uri https://registry.npmjs.org/wrappy
+758 verbose request no auth needed
+759 info attempt registry request try #1 at 12:17:31 PM
+760 http request GET https://registry.npmjs.org/wrappy
+761 silly install resolved []
+762 verbose about to build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits
+763 info build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits
+764 info preinstall path-is-absolute@1.0.1
+765 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute/package.json
+766 info linkStuff inherits@2.0.3
+767 silly linkStuff inherits@2.0.3 has /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules as its parent node_modules
+768 verbose linkBins inherits@2.0.3
+769 verbose linkMans inherits@2.0.3
+770 verbose rebuildBundles inherits@2.0.3
+771 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute/package.json
+772 info install inherits@2.0.3
+773 info postinstall inherits@2.0.3
+774 verbose unlock done using /home/michele.sbicego/.npm/_locks/inherits-782460a839a5e90f.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inherits
+775 silly install resolved []
+776 verbose about to build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+777 info build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+778 info linkStuff path-is-absolute@1.0.1
+779 silly linkStuff path-is-absolute@1.0.1 has /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules as its parent node_modules
+780 verbose linkBins path-is-absolute@1.0.1
+781 verbose linkMans path-is-absolute@1.0.1
+782 verbose rebuildBundles path-is-absolute@1.0.1
+783 info install path-is-absolute@1.0.1
+784 info postinstall path-is-absolute@1.0.1
+785 verbose unlock done using /home/michele.sbicego/.npm/_locks/path-is-absolute-4cf849e8f8d4adfe.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/path-is-absolute
+786 http 200 https://registry.npmjs.org/wrappy
+787 verbose headers { server: 'nginx/1.10.1',
+787 verbose headers   'content-type': 'application/json',
+787 verbose headers   'last-modified': 'Tue, 01 Nov 2016 18:48:39 GMT',
+787 verbose headers   etag: 'W/"5818e387-11a5"',
+787 verbose headers   'content-encoding': 'gzip',
+787 verbose headers   'cache-control': 'max-age=300',
+787 verbose headers   'content-length': '1375',
+787 verbose headers   'accept-ranges': 'bytes',
+787 verbose headers   date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+787 verbose headers   via: '1.1 varnish',
+787 verbose headers   age: '270',
+787 verbose headers   connection: 'keep-alive',
+787 verbose headers   'x-served-by': 'cache-lhr6329-LHR',
+787 verbose headers   'x-cache': 'HIT',
+787 verbose headers   'x-cache-hits': '32',
+787 verbose headers   'x-timer': 'S1479899851.684764,VS0,VE0',
+787 verbose headers   vary: 'Accept-Encoding' }
+788 silly get cb [ 200,
+788 silly get   { server: 'nginx/1.10.1',
+788 silly get     'content-type': 'application/json',
+788 silly get     'last-modified': 'Tue, 01 Nov 2016 18:48:39 GMT',
+788 silly get     etag: 'W/"5818e387-11a5"',
+788 silly get     'content-encoding': 'gzip',
+788 silly get     'cache-control': 'max-age=300',
+788 silly get     'content-length': '1375',
+788 silly get     'accept-ranges': 'bytes',
+788 silly get     date: 'Wed, 23 Nov 2016 11:17:31 GMT',
+788 silly get     via: '1.1 varnish',
+788 silly get     age: '270',
+788 silly get     connection: 'keep-alive',
+788 silly get     'x-served-by': 'cache-lhr6329-LHR',
+788 silly get     'x-cache': 'HIT',
+788 silly get     'x-cache-hits': '32',
+788 silly get     'x-timer': 'S1479899851.684764,VS0,VE0',
+788 silly get     vary: 'Accept-Encoding' } ]
+789 verbose get saving wrappy to /home/michele.sbicego/.npm/registry.npmjs.org/wrappy/.cache.json
+790 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+791 silly addNameRange number 2 { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: true }
+792 silly addNameRange versions [ 'wrappy', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+793 silly addNamed wrappy@1.0.2
+794 verbose addNamed "1.0.2" is a plain semver version for wrappy
+795 silly mapToRegistry name wrappy
+796 silly mapToRegistry using default registry
+797 silly mapToRegistry registry https://registry.npmjs.org/
+798 silly mapToRegistry data Result {
+798 silly mapToRegistry   raw: 'wrappy',
+798 silly mapToRegistry   scope: null,
+798 silly mapToRegistry   name: 'wrappy',
+798 silly mapToRegistry   rawSpec: '',
+798 silly mapToRegistry   spec: 'latest',
+798 silly mapToRegistry   type: 'tag' }
+799 silly mapToRegistry uri https://registry.npmjs.org/wrappy
+800 verbose addRemoteTarball https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz not in flight; adding
+801 verbose addRemoteTarball [ 'https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz',
+801 verbose addRemoteTarball   'b5243d8f3ec1aa35f1364605bc0d1036e30ab69f' ]
+802 info retry fetch attempt 1 at 12:17:31 PM
+803 info attempt registry request try #1 at 12:17:31 PM
+804 http fetch GET https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz
+805 http fetch 200 https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz
+806 silly fetchAndShaCheck shasum b5243d8f3ec1aa35f1364605bc0d1036e30ab69f
+807 verbose addTmpTarball /tmp/npm-12062-66fe9148/registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz not in flight; adding
+808 verbose addTmpTarball already have metadata; skipping unpack for wrappy@1.0.2
+809 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+810 silly cache afterAdd wrappy@1.0.2
+811 verbose afterAdd /home/michele.sbicego/.npm/wrappy/1.0.2/package/package.json not in flight; writing
+812 verbose correctMkdir /home/michele.sbicego/.npm correctMkdir not in flight; initializing
+813 verbose afterAdd /home/michele.sbicego/.npm/wrappy/1.0.2/package/package.json written
+814 silly install resolved [ { name: 'wrappy',
+814 silly install resolved     version: '1.0.2',
+814 silly install resolved     description: 'Callback wrapping utility',
+814 silly install resolved     main: 'wrappy.js',
+814 silly install resolved     files: [ 'wrappy.js' ],
+814 silly install resolved     directories: { test: 'test' },
+814 silly install resolved     dependencies: {},
+814 silly install resolved     devDependencies: { tap: '^2.3.1' },
+814 silly install resolved     scripts: { test: 'tap --coverage test/*.js' },
+814 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/npm/wrappy.git' },
+814 silly install resolved     author:
+814 silly install resolved      { name: 'Isaac Z. Schlueter',
+814 silly install resolved        email: 'i@izs.me',
+814 silly install resolved        url: 'http://blog.izs.me/' },
+814 silly install resolved     license: 'ISC',
+814 silly install resolved     bugs: { url: 'https://github.com/npm/wrappy/issues' },
+814 silly install resolved     homepage: 'https://github.com/npm/wrappy',
+814 silly install resolved     gitHead: '71d91b6dc5bdeac37e218c2cf03f9ab55b60d214',
+814 silly install resolved     _id: 'wrappy@1.0.2',
+814 silly install resolved     _shasum: 'b5243d8f3ec1aa35f1364605bc0d1036e30ab69f',
+814 silly install resolved     _from: 'wrappy@>=1.0.0 <2.0.0',
+814 silly install resolved     _npmVersion: '3.9.1',
+814 silly install resolved     _nodeVersion: '5.10.1',
+814 silly install resolved     _npmUser: { name: 'zkat', email: 'kat@sykosomatic.org' },
+814 silly install resolved     dist:
+814 silly install resolved      { shasum: 'b5243d8f3ec1aa35f1364605bc0d1036e30ab69f',
+814 silly install resolved        tarball: 'https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz' },
+814 silly install resolved     maintainers: [ [Object], [Object] ],
+814 silly install resolved     _npmOperationalInternal:
+814 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+814 silly install resolved        tmp: 'tmp/wrappy-1.0.2.tgz_1463527848281_0.037129373755306005' },
+814 silly install resolved     _resolved: 'https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz' } ]
+815 info install wrappy@1.0.2 into /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+816 info installOne wrappy@1.0.2
+817 verbose installOne of wrappy to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight not in flight; installing
+818 verbose correctMkdir /home/michele.sbicego/.npm/_locks correctMkdir not in flight; initializing
+819 verbose lock using /home/michele.sbicego/.npm/_locks/wrappy-7e5d4db92620a1b9.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+820 silly install write writing wrappy 1.0.2 to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+821 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+822 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+823 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+824 verbose tar unpack /home/michele.sbicego/.npm/wrappy/1.0.2/package.tgz
+825 verbose tar unpacking to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+826 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy is being purged
+827 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+828 silly gunzTarPerm modes [ '755', '644' ]
+829 silly gunzTarPerm extractEntry package.json
+830 silly gunzTarPerm extractEntry README.md
+831 silly gunzTarPerm extractEntry LICENSE
+832 silly gunzTarPerm extractEntry wrappy.js
+833 verbose write writing to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json
+834 info preinstall wrappy@1.0.2
+835 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json
+836 verbose readDependencies loading dependencies from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json
+837 silly install resolved []
+838 verbose about to build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+839 info build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+840 info linkStuff wrappy@1.0.2
+841 silly linkStuff wrappy@1.0.2 has /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules as its parent node_modules
+842 verbose linkBins wrappy@1.0.2
+843 verbose linkMans wrappy@1.0.2
+844 verbose rebuildBundles wrappy@1.0.2
+845 info install wrappy@1.0.2
+846 info postinstall wrappy@1.0.2
+847 verbose unlock done using /home/michele.sbicego/.npm/_locks/wrappy-7e5d4db92620a1b9.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight/node_modules/wrappy
+848 verbose about to build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+849 info build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+850 info linkStuff inflight@1.0.6
+851 silly linkStuff inflight@1.0.6 has /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules as its parent node_modules
+852 verbose linkBins inflight@1.0.6
+853 verbose linkMans inflight@1.0.6
+854 verbose rebuildBundles inflight@1.0.6
+855 verbose rebuildBundles [ 'wrappy' ]
+856 info install inflight@1.0.6
+857 info postinstall inflight@1.0.6
+858 verbose unlock done using /home/michele.sbicego/.npm/_locks/inflight-765208e0f575e048.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/inflight
+859 verbose about to build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+860 verbose unlock done using /home/michele.sbicego/.npm/_locks/glob-2b5297f61d7e4b32.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+861 verbose about to build /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+862 verbose unlock done using /home/michele.sbicego/.npm/_locks/jasmine-dcb91c2c4159b8d1.lock for /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+863 verbose stack Error: Unknown system error -122: Unknown system error -122, open '/home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core/package.json.864425686'
+863 verbose stack     at Error (native)
+864 verbose cwd /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+865 error Linux 4.4.0-36-generic
+866 error argv "/usr/local/node-v4.6.1/bin/node" "/usr/local/bin/npm" "install" "jasmine"
+867 error node v4.6.1
+868 error npm  v2.15.9
+869 error path /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core/package.json.864425686
+870 error code Unknown system error -122
+871 error errno -122
+872 error syscall open
+873 error Unknown system error -122: Unknown system error -122, open '/home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core/package.json.864425686'
+874 error If you need help, you may report this error at:
+874 error     <https://github.com/npm/npm/issues>
+875 verbose exit [ -122, true ]
+876 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/minimatch
+877 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+878 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch
+879 silly vacuum-fs purging /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/minimatch
+880 silly vacuum-fs quitting because other entries in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules
+881 verbose unbuild node_modules/jasmine/node_modules/jasmine-core
+882 info preuninstall jasmine-core@2.5.2
+883 info uninstall jasmine-core@2.5.2
+884 verbose unbuild rmStuff jasmine-core@2.5.2 from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules
+885 verbose unbuild rmStuff in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules
+886 info postuninstall jasmine-core@2.5.2
+887 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+888 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core
+889 silly vacuum-fs purging /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/jasmine-core
+890 silly vacuum-fs quitting because other entries in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules
+891 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/once
+892 info preuninstall once@1.4.0
+893 info uninstall once@1.4.0
+894 verbose unbuild rmStuff once@1.4.0 from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules
+895 verbose unbuild rmStuff in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules
+896 info postuninstall once@1.4.0
+897 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+898 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once
+899 silly vacuum-fs purging /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/once
+900 silly vacuum-fs quitting because other entries in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules
+901 verbose unbuild node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+902 info preuninstall fs.realpath@1.0.0
+903 info uninstall fs.realpath@1.0.0
+904 verbose unbuild rmStuff fs.realpath@1.0.0 from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules
+905 verbose unbuild rmStuff in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules
+906 info postuninstall fs.realpath@1.0.0
+907 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+908 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+909 silly vacuum-fs purging /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules/fs.realpath
+910 silly vacuum-fs quitting because other entries in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob/node_modules
+911 verbose unbuild node_modules/jasmine/node_modules/glob
+912 info preuninstall glob@7.1.1
+913 info uninstall glob@7.1.1
+914 verbose unbuild rmStuff glob@7.1.1 from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules
+915 verbose unbuild rmStuff in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules
+916 info postuninstall glob@7.1.1
+917 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+918 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+919 silly vacuum-fs purging /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules/glob
+920 silly vacuum-fs quitting because other entries in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine/node_modules
+921 verbose unbuild node_modules/jasmine
+922 info preuninstall jasmine@2.5.2
+923 info uninstall jasmine@2.5.2
+924 verbose unbuild rmStuff jasmine@2.5.2 from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules
+925 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/.bin/jasmine is being gently removed
+926 silly gentlyRm verifying /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6 is an npm working directory
+927 silly gentlyRm containing path /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6 is under npm's control, in /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+928 silly gentlyRm deletion target /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/.bin/jasmine is under /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+929 verbose gentlyRm vacuuming from /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/.bin/jasmine up to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+930 info postuninstall jasmine@2.5.2
+931 silly gentlyRm /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine is being purged from base /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
+932 verbose gentlyRm don't care about contents; nuking /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+933 silly vacuum-fs purging /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules/jasmine
+934 silly vacuum-fs removing /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6/node_modules
+935 silly vacuum-fs finished vacuuming up to /home/michele.sbicego/Desktop/Unitn/IS2/Lab_2/SE2Lab6
